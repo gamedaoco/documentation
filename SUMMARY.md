@@ -1,6 +1,6 @@
 # Table of contents
 
-* [What is MyProduct?](README.md)
+* [GameDAO](README.md)
 
 ## Guides
 
@@ -10,20 +10,25 @@
 
 ## Fundamentals
 
-* [Projects](fundamentals/projects.md)
-* [Members](fundamentals/members.md)
-* [Task Lists](fundamentals/task-lists.md)
-* [Tasks](fundamentals/tasks.md)
+* [GameDAO: The DAO of  DAOs](fundamentals/gamedao-the-dao-of-daos.md)
+* [Fundraising](fundamentals/fundraising.md)
+* [Coordination](fundamentals/coordination.md)
+* [Ownership](fundamentals/ownership.md)
+* [Rewards](fundamentals/rewards.md)
 
 ## Use Cases
 
-* [For Designers](use-cases/for-designers/README.md)
-  * [Figma Integration](use-cases/for-designers/figma-integration.md)
-* [For Engineers](use-cases/for-engineers/README.md)
-  * [GitHub Integration](use-cases/for-engineers/github-integration.md)
-* [For Support](use-cases/for-support/README.md)
-  * [Intercom Integration](use-cases/for-support/intercom-integration.md)
+* [Publishers + Investors](use-cases/publishers-+-investors.md)
+* [Game Studios + Creators](use-cases/game-studios-+-creators.md)
+* [Gamers](use-cases/gamers.md)
+* [Engineers + Integrators](use-cases/engineers-+-integrators.md)
 
-## Extras
+## GameDAO Protocol
 
-* [Keyboard Shortcuts](extras/keyboard-shortcuts.md)
+* [Technical Overview.](gamedao-protocol/technical-overview..md)
+* [Unstoppable Organisations.](gamedao-protocol/unstoppable-organisations..md)
+* [Fundraising.](gamedao-protocol/fundraising..md)
+* [Proposals + Voting.](gamedao-protocol/proposals-+-voting..md)
+* [Identity + Scoring.](gamedao-protocol/identity-+-scoring..md)
+* [Portable Collectables.](gamedao-protocol/portable-collectables..md)
+* [Others.](gamedao-protocol/others..md)

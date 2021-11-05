@@ -1,20 +1,16 @@
-# What is MyProduct?
+# GameDAO
 
 {% hint style="info" %}
 **Good to know:** providing a brief overview of your product and its core use cases is a great place to start with product docs. Your product might seem obvious to you – you made it! However, to others, even folks who are trying your product after reading your site or getting a sales demo, it can still be unclear. This is your chance to clarify your product and set the right expectations!
 {% endhint %}
 
-Here are a couple of examples of succinct overviews from products with really great docs:
+[GameDAO](https://gamedao.co) is an experimental crowd-coordination and -fundraising organisation currently running on [zero.io](https://zero.io), a [Polkadot](https://polkadot.network) / [substrate](https://substrate.io) based network for video games.
 
-> Loom is a video messaging tool that helps you get your message across through instantly shareable videos.
->
-> With Loom, you can record your camera, microphone, and desktop simultaneously. Your video is then instantly available to share through Loom's patented technology.
->
-> — From the [Loom Docs](https://support.loom.com/hc/en-us/articles/360002158057-What-is-Loom-)
+While the platform as a whole focusses on ease-of-use of finance and governance protocols (e.g. grants or lending), there are more complex scenarios which in turn require a deeper understanding and additional preparation in advance (e.g. for fractionalised equity).
 
-> The Mailchimp Marketing API provides programmatic access to Mailchimp data and functionality, allowing developers to build custom features to do things like sync email activity and campaign analytics with their database, manage audiences and campaigns, and more.
->
-> — From the [Mailchimp Marketing API docs](https://mailchimp.com/developer/marketing/docs/fundamentals/)
+These protocols create a low barrier, community governed fundraising platform to involve funding contributors in project coordination to increase mutual trust due to shared interests and increased transparency. This allows for early stage market proof and loyalty through ownership. Furthermore this contributes to individual freedom and the development of more sustainable business models of video games.
+
+By utilisation of innovative coordination methods, like quadratic voting and creation of loan protocols featuring alternative collaterals, like NFTs, GameDAO will become the protocol directly connecting creators, players, publishers and investors.
 
 ## Getting Started
 
@@ -50,20 +46,20 @@ Follow our handy guides to get started on the basics as quickly as possible:
 
 Learn the fundamentals of MyProduct to get a deeper understanding of our main features:
 
-{% content-ref url="fundamentals/projects.md" %}
-[projects.md](fundamentals/projects.md)
+{% content-ref url="fundamentals/gamedao-the-dao-of-daos.md" %}
+[gamedao-the-dao-of-daos.md](fundamentals/gamedao-the-dao-of-daos.md)
 {% endcontent-ref %}
 
-{% content-ref url="fundamentals/members.md" %}
-[members.md](fundamentals/members.md)
+{% content-ref url="fundamentals/coordination.md" %}
+[coordination.md](fundamentals/coordination.md)
 {% endcontent-ref %}
 
-{% content-ref url="fundamentals/task-lists.md" %}
-[task-lists.md](fundamentals/task-lists.md)
+{% content-ref url="fundamentals/fundraising.md" %}
+[fundraising.md](fundamentals/fundraising.md)
 {% endcontent-ref %}
 
-{% content-ref url="fundamentals/tasks.md" %}
-[tasks.md](fundamentals/tasks.md)
+{% content-ref url="fundamentals/ownership.md" %}
+[ownership.md](fundamentals/ownership.md)
 {% endcontent-ref %}
 
 {% hint style="info" %}
