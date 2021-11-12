@@ -1,16 +1,36 @@
+---
+description: GameDAO = Video Games + Community + DAO + DeFi + NFT
+---
+
 # GameDAO
 
-{% hint style="info" %}
-**Good to know:** providing a brief overview of your product and its core use cases is a great place to start with product docs. Your product might seem obvious to you – you made it! However, to others, even folks who are trying your product after reading your site or getting a sales demo, it can still be unclear. This is your chance to clarify your product and set the right expectations!
+{% hint style="success" %}
+**Keep it real:** The contents of these pages, published under docs.gamedao.co are a collection of the latest developments of our protocols and not considered final. We live an open and transparent culture and therefore publicly share works in progress and knowledge, traditional minds would build another million dollar silo with.&#x20;
 {% endhint %}
 
-[GameDAO](https://gamedao.co) is an experimental crowd-coordination and -fundraising organisation currently running on [zero.io](https://zero.io), a [Polkadot](https://polkadot.network) / [substrate](https://substrate.io) based network for video games.
+GameDAO Protocol is an experimental decentralised protocol for fundraising, coordination and ownership of video games. It is developed by GameDAO AG, a research and development company, based in Liechtenstein.
 
-While the platform as a whole focusses on ease-of-use of finance and governance protocols (e.g. grants or lending), there are more complex scenarios which in turn require a deeper understanding and additional preparation in advance (e.g. for fractionalised equity).
+GameDAO is built with [substrate](https://substrate.io), a cutting edge blockchain SDK by Parity, with interoperability, scalability, robustness and security in mind. It is running on [zero.io](https://zero.io), a video games multichain, and other decentralised networks.
 
-These protocols create a low barrier, community governed fundraising platform to involve funding contributors in project coordination to increase mutual trust due to shared interests and increased transparency. This allows for early stage market proof and loyalty through ownership. Furthermore this contributes to individual freedom and the development of more sustainable business models of video games.
+**Primitives for Open Markets**
 
-By utilisation of innovative coordination methods, like quadratic voting and creation of loan protocols featuring alternative collaterals, like NFTs, GameDAO will become the protocol directly connecting creators, players, publishers and investors.
+GameDAO Protocol provides primitives for invocation and operation of decentralised organisations (DAOs), utilisation of decentralised finance (DeFi) instruments and non-fungible token (NFT) based loot drops and license management. The protocol is designed and operated in a decentralised fashion, enabling programmatic access to everyone.
+
+GameDAO AG also develops the decentralised application frontend accessible through https://gamedao.co, and others, to enable non technical people to utilise these protocols with some additional safeguards, making them usable in a reasonable, secure and compliant way.
+
+**Community owned by design**
+
+The protocol and website are operated in a decentralised fashion, meaning, there are no centralised entities being able to stop any of these without the consensus of network and protocol operators.
+
+The protocol as a whole focusses on ease-of-use of finance and governance protocols (e.g. grants or lending), there are more complex scenarios which in turn require deeper understanding of protocols, their interaction with other protocols and data providers, and also require additional preparation in advance (e.g. compliance, identification).
+
+The protocols and application assemble to a low barrier, community governed fundraising platform to involve funding contributors in project coordination to increase mutual trust due to shared interests and increased transparency. This allows for early stage market proof and loyalty through ownership.
+
+This shall contribute to the individual freedom of the community and the creation of more sustainable business models of video games and the cyberspace in general.
+
+GameDAO is the protocol directly connecting gamers, creators, publishers and investors.
+
+
 
 ## Getting Started
 
