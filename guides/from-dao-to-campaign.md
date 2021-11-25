@@ -4,11 +4,11 @@ description: >-
   fundraising campaign on GameDAO
 ---
 
-# Creating your first project
+# 🪄 From DAO to Campaign
 
 ## The basics
 
-Projects are containers for task lists. Think of them as a library for everything your team needs to get done to complete or ship a project.
+A DAO is the minimum primitive you need to establish to get organised with your community. Whether you are setting up a working group for your project team or want to interact with hundreds of community members and contributors.
 
 ## Creating a Wallet and Claim an Identity
 

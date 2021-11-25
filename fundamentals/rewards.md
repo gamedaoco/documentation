@@ -1,2 +1,2 @@
-# Rewards
+# 💎 Rewards
 

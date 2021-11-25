@@ -1,21 +1,21 @@
 # Table of contents
 
-* [GameDAO](README.md)
-* [Code of Conduct](code-of-conduct.md)
+* [🕹 GameDAO](README.md)
+* [📖 Code of Conduct](code-of-conduct.md)
 
 ## Guides
 
-* [Creating your first project](guides/creating-your-first-project.md)
-* [Creating your first task](guides/creating-your-first-task.md)
-* [Advanced permissions](guides/advanced-permissions.md)
+* [🪄 From DAO to Campaign](guides/from-dao-to-campaign.md)
+* [💡 Discover, Curate, Contribute: The lifecycle of a Campaign](guides/discover-curate-contribute-the-lifecycle-of-a-campaign.md)
+* [🍒 Realms](guides/realms.md)
 
 ## Fundamentals
 
-* [GameDAO: The DAO of  DAOs](fundamentals/gamedao-the-dao-of-daos.md)
-* [Fundraising](fundamentals/fundraising.md)
-* [Coordination](fundamentals/coordination.md)
-* [Ownership](fundamentals/ownership.md)
-* [Rewards](fundamentals/rewards.md)
+* [🎮 GameDAO: The DAO of  DAOs](fundamentals/gamedao-the-dao-of-daos.md)
+* [💸 Fundraising](fundamentals/fundraising.md)
+* [🎛 Coordination](fundamentals/coordination.md)
+* [🍕 Ownership](fundamentals/ownership.md)
+* [💎 Rewards](fundamentals/rewards.md)
 
 ## Use Cases
 
