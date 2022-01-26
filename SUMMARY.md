@@ -5,14 +5,14 @@
 
 ## Guides
 
-* [💌  Installing your wallet](guides/installing-your-wallet.md)
+* [💌 Install Polkadot wallet and create an Account](guides/installing-your-wallet.md)
 * [🪄 From DAO to Campaign](guides/from-dao-to-campaign.md)
 * [💡 Discover, Curate, Contribute: The lifecycle of a Campaign](guides/discover-curate-contribute-the-lifecycle-of-a-campaign.md)
 * [🍒 Realms](guides/realms.md)
 
 ## Fundamentals
 
-* [🎮 GameDAO: The DAO of  DAOs](fundamentals/gamedao-the-dao-of-daos.md)
+* [🎮 GameDAO: The DAO of DAOs](fundamentals/gamedao-the-dao-of-daos.md)
 * [💸 Fundraising](fundamentals/fundraising.md)
 * [🎛 Coordination](fundamentals/coordination.md)
 * [🍕 Ownership](fundamentals/ownership.md)
