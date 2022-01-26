@@ -25,7 +25,7 @@ Set up your polkadot.js wallet and obtain some ZERO token from the faucet bot in
 5. Sign the transaction by clicking "Sign & Submit" and entering your wallet password.
 6. If it did not work, make sure you have some ZERO amount on your wallet.
 
-## Creating an organisation
+## Creating an Organisation
 
 Now its time to create your first DAO.
 
@@ -55,7 +55,25 @@ Now its time to create your first DAO.
 
 ## Creating a Campaign
 
-adasdasd
+Raise a campaign to receive funds from your community.
+
+1. Click on Campaigns in the left navigation
+2. Click "+New Campaign" and start filling the form by
+3. selecting your Organisation from the Organisation select box
+4. Give your fundraising campaign a campaign name
+5. Add a description  (will be shown on the Campaigns List Page)
+6. Add a Logo  (will be shown on the Campaigns List Page and on top of the header for your Campaign Detail Page)
+7. Add a Header Image (will be shown on the Campaigns Detail Page)
+8. Add a Content Description and images using the markdown editor (be creative and design your campaign page) (<mark style="color:purple;">a better editor is coming soon</mark>)
+9. Add a public representative to be transparent to your community
+10. Keep the address or replace the address for the Admin Account&#x20;
+11. Select Prepaid as Protocol (<mark style="color:purple;">others coming soon</mark>)
+12. Select a suitable category for the usage of the funds
+13. Deposit (GAME): Add an amount you are willing to deposit to show the community how much you are willing to lock up for the runtime of the campaign  (<mark style="color:purple;">on beta.gamedao.co so far only ZERO tokens are used</mark>)&#x20;
+14. Funding Target (PLAY) Add the amount of stable coins you want to raise (<mark style="color:purple;">on beta.gamedao.co so far only ZERO tokens are used</mark>)&#x20;
+15. Select a campaign duration (you can choose 20min to run a quick test)
+16. check the checkboxes below and click Create Campaign
+17. Sign and submit the transaction and have a look on your fundraising campaign
 
 {% hint style="info" %}
 **Good to know:** your product docs aren't just a reference of all your features! use them to encourage folks to perform certain actions and discover the value in your product.
