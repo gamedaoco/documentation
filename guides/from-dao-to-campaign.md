@@ -76,7 +76,8 @@ Raise a campaign to receive funds from your community.
 17. Sign and submit the transaction and have a look on your fundraising campaign
 
 {% hint style="info" %}
-**Good to know:** your product docs aren't just a reference of all your features! use them to encourage folks to perform certain actions and discover the value in your product.
+**Good to know:** The campaign can be funded directly from the Campaign List Page. When your campaign is successfully funded create a withrawal proposal to access the funds.\
+Go on here: [Fundraising Withdrawal Proposal](../fundamentals/fundraising/fundraising-withdrawal-proposal.md)
 {% endhint %}
 
 ## Creating Rewards

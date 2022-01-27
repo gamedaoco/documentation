@@ -66,8 +66,8 @@ Learn the fundamentals of MyProduct to get a deeper understanding of our main fe
 [coordination.md](fundamentals/coordination.md)
 {% endcontent-ref %}
 
-{% content-ref url="fundamentals/fundraising/" %}
-[fundraising](fundamentals/fundraising/)
+{% content-ref url="fundamentals/fundraising.md" %}
+[fundraising.md](fundamentals/fundraising.md)
 {% endcontent-ref %}
 
 {% content-ref url="fundamentals/ownership.md" %}

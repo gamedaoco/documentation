@@ -13,7 +13,7 @@
 ## Fundamentals
 
 * [🎮 GameDAO: The DAO of DAOs](fundamentals/gamedao-the-dao-of-daos.md)
-* [💸 Fundraising](fundamentals/fundraising/README.md)
+* [💸 Fundraising](fundamentals/fundraising.md)
   * [Fundraising Withdrawal Proposal](fundamentals/fundraising/fundraising-withdrawal-proposal.md)
 * [🎛 Coordination](fundamentals/coordination.md)
 * [🍕 Ownership](fundamentals/ownership.md)
