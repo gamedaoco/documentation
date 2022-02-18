@@ -69,9 +69,9 @@ Raise a campaign to receive funds from your community.
 10. Keep the address or replace the address for the Admin Account&#x20;
 11. Select Prepaid as Protocol (<mark style="color:purple;">others coming soon</mark>)
 12. Select a suitable category for the usage of the funds
-13. Deposit (GAME): Add an amount you are willing to deposit to show the community how much you are willing to lock up for the runtime of the campaign  (<mark style="color:purple;">on beta.gamedao.co so far only ZERO tokens are used</mark>)&#x20;
-14. Funding Target (PLAY) Add the amount of stable coins you want to raise (<mark style="color:purple;">on beta.gamedao.co so far only ZERO tokens are used</mark>)&#x20;
-15. Select a campaign duration (you can choose 20min to run a quick test)
+13. Deposit: Add an amount you are willing to deposit to show the community how much you are willing to lock up for the runtime of the campaign  (<mark style="color:purple;">on beta.gamedao.co so far only ZERO tokens are used</mark>)&#x20;
+14. Funding Target: Add the amount you want to raise (<mark style="color:purple;">on beta.gamedao.co so far only ZERO tokens are used but later stable coins will be used to raise funds</mark>)&#x20;
+15. Select a campaign duration (you can choose 20min to run a quick test, but make sure you can fund it with your test tokens during this time)
 16. check the checkboxes below and click Create Campaign
 17. Sign and submit the transaction and have a look on your fundraising campaign
 
