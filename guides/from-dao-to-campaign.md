@@ -25,7 +25,7 @@ Set up your polkadot.js wallet and obtain some ZERO token from the faucet bot in
 5. Sign the transaction by clicking "Sign & Submit" and entering your wallet password.
 6. If it did not work, make sure you have some ZERO amount on your wallet.
 
-## Creating an Organisation
+## 2. Creating an Organisation
 
 Now its time to create your first DAO.
 
@@ -58,7 +58,7 @@ Now its time to create your first DAO.
 15. Your DAO is created \
 
 
-## Creating a Campaign
+## 3. Creating a Campaign
 
 Raise a campaign to receive funds from your community.
 
@@ -80,14 +80,16 @@ Raise a campaign to receive funds from your community.
 16. check the checkboxes below and click Create Campaign
 17. Sign and submit the transaction and have a look on your fundraising campaign
 
-{% hint style="info" %}
-**Good to know:** The campaign can be funded directly from the Campaign List Page. When your campaign is successfully funded create a withdrawal proposal to access the funds.\
-Go on here: [Fundraising Withdrawal Proposal](../fundamentals/fundraising/fundraising-withdrawal-proposal.md)
-{% endhint %}
-
-## Funding the campaign
+## 4. Funding the campaign
 
 1. Go to the campaign list page by clicking in the left navigation bar on "Campaigns"
 2. find your campaign and enter a value into the input field. You cannot fund the campaign with the same wallet account which was used to create the campaign.
 3. Ask your community to fund into your campaign before the runtime is over.&#x20;
+
+
+
+{% hint style="info" %}
+**Good to know:** The campaign can be funded directly from the Campaign List Page. When your campaign is successfully funded create a withdrawal proposal to access the funds.\
+Go on here: [Fundraising Withdrawal Proposal](../fundamentals/fundraising/fundraising-withdrawal-proposal.md)
+{% endhint %}
 
