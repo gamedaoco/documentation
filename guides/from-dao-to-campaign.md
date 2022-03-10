@@ -42,7 +42,7 @@ Now its time to create your first DAO.
     If you do not have a second address you can create one in your polkadot.js browser plugin repeating the steps in[ Install Polkadot wallet and create an Account](installing-your-wallet.md).  Add your second address into the Treasury Account address field\
 
 
-    {% hint style="danger" %}
+    {% hint style="warning" %}
     **Treasury Account:** The treasury account on the current version of our test platform is just an address which is owned by an individual. In a later version each DAO / Organisation will have a treasury which is owned and governed by the DAO / Organisation itself. The current version does not reflect this yet.&#x20;
     {% endhint %}
 11. Choose how do you want to control member access by selecting&#x20;
