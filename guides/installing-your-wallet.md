@@ -106,7 +106,7 @@ To get all of the above token, you may use the faucet integrated into our discor
 
 1. Join our Discord channel to obtain some ZERO tokens: [https://discord.gg/P7NHWGzJ7r](https://discord.gg/P7NHWGzJ7r)
 2. Find the faucet channel in the category ZERO MULTIVERSE:\
-   ![](https://user-images.githubusercontent.com/91988132/145687278-f014dff1-9096-40a8-8f8e-ffbb2aefafc0.png)\
+   ![](<../.gitbook/assets/image (3).png>)\
 
 3. Enter in the chat the following statement:\
    `!fc get #your walletaddress#`\
