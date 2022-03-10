@@ -39,7 +39,12 @@ Now its time to create your first DAO.
 8. add a website and a code repository if you have some related to your Organisation
 9. **IMPORTANT**: The Controller Account address needs to be a wallet address in ZERO format. The holder of the Controller Account address is the admin of the DAO. You can use your current address (eg. copy by clicking the heart icon next to your wallet on the top right) and paste it into the form
 10. **IMPORTANT**: The Treasury Account address also needs to be a wallet address in ZERO format. The Treasury Account address is the address receiving funds from fundraising campaigns and fees. This address may not be the same address as the Controller Account address. Therefore you will need a second address to setup your Organisation. \
-    If you do not have a second address you can create one in your polkadot.js browser plugin repeating the steps in[ Install Polkadot wallet and create an Account](installing-your-wallet.md).  Add your second address into the Treasury Account address field
+    If you do not have a second address you can create one in your polkadot.js browser plugin repeating the steps in[ Install Polkadot wallet and create an Account](installing-your-wallet.md).  Add your second address into the Treasury Account address field\
+
+
+    {% hint style="danger" %}
+    **Treasury Account:** The treasury account on the current version of our test platform is just an address which is owned by an individual. In a later version each DAO / Organisation will have a treasury which is owned and governed by the DAO / Organisation itself. The current version does not reflect this yet.&#x20;
+    {% endhint %}
 11. Choose how do you want to control member access by selecting&#x20;
     1. Open (everyone can join until member limit is reached)
     2. Invitation (members need to be on a whitelist to enter the Organisation) (_<mark style="color:purple;">coming soon</mark>_)
@@ -76,9 +81,13 @@ Raise a campaign to receive funds from your community.
 17. Sign and submit the transaction and have a look on your fundraising campaign
 
 {% hint style="info" %}
-**Good to know:** The campaign can be funded directly from the Campaign List Page. When your campaign is successfully funded create a withrawal proposal to access the funds.\
+**Good to know:** The campaign can be funded directly from the Campaign List Page. When your campaign is successfully funded create a withdrawal proposal to access the funds.\
 Go on here: [Fundraising Withdrawal Proposal](../fundamentals/fundraising/fundraising-withdrawal-proposal.md)
 {% endhint %}
 
-## Creating Rewards
+## Funding the campaign
+
+1. Go to the campaign list page by clicking in the left navigation bar on "Campaigns"
+2. find your campaign and enter a value into the input field. You cannot fund the campaign with the same wallet account which was used to create the campaign.
+3. Ask your community to fund into your campaign before the runtime is over.&#x20;
 
