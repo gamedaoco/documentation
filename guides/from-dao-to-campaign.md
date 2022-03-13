@@ -32,8 +32,8 @@ Now its time to create your first DAO.
 1. Go to [https://beta.gamedao.co/](https://beta.gamedao.co) and enter the app
 2. Connect your wallet on the top right connect button
 3. Click  on Organisations on the left navigation to get to the Organisations List Page
-4. Click the green "New DAO" button
-5. Fill a name and an email address
+4. Click the "New DAO" button
+5. Fill an Organisation name and an email address
 6. Upload some nice free to use images representing the DAO you are setting up
 7. &#x20;Write a short description about the purpose of the Organisation
 8. add a website and a code repository if you have some related to your Organisation
