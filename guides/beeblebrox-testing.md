@@ -75,11 +75,11 @@ Either go through the frontend process on haiku.gamedao.co and click the "+" but
 3. 🚧 select one of the accounts you just topped up with ZERO & GAME balances under `using the selected account` (do not use Alice for this)
 4. select under `control` pallet "submit the following extrinsic"
 5. select `createOrg(...)` in the right dropdown
-6. ![](<../.gitbook/assets/image (9).png>)
+6. ![](<../.gitbook/assets/image (9) (1).png>)
 7. fill all the fields:
    1. controllerId: select one of the accounts you just topped up with ZERO & GAME balances&#x20;
    2. `name`: enter some name (your Organisation name)
-   3. `cid`: Qmeaj2DCJw71qwUZN8N2r4GVcBBGfqiyMMBrh15n2KbY7G (a prefilled Content ID on IPFS containing description and logo)
+   3. `cid`: `Qmeaj2DCJw71qwUZN8N2r4GVcBBGfqiyMMBrh15n2KbY7G` (a prefilled Content ID on IPFS containing description and logo)
    4. `orgType`: select any (eg. Individual)
    5. `access`: Open&#x20;
    6. `feeModel`: `NoFees` (or select `Transfer` if your Organisation wants to collect entry fees)
@@ -87,15 +87,16 @@ Either go through the frontend process on haiku.gamedao.co and click the "+" but
    8. `govAsset`: `1` --> which represents GAME token
    9. `payAsset`: `2` --> which represents PLAY token
    10. `memberLimit`: add eg. `100` for a limit of 100 members
-   11. `deposit`: add `10000000000000000000` for a deposit of 10 GAME
+   11. `deposit`: add `10000000000000000000` for a deposit of 10 GAME (minimum deposit is currently 5 GAME)
    12. click `Submit Transaction`
    13. click `Sign and Submit`
 8. Check that your Organisation is created by clicking to Developer --> Chain State --> select `control` pallet and `orgsControlled(AccoundId32)` and submit the query by clicking the "+" button. Make sure the account is selected which you set as controller at 7.1. \
-   You should receive an `organisationId` which represents your Organisation. Copy that ID and note it down somewhere as you will need it in other steps.&#x20;
+   You should receive an `organisationId` which represents your Organisation. \
+   🚧 Copy that ID and note it down somewhere as you will need it in other steps.&#x20;
 
 ### Join Organisation
 
-You can join an organisation like this:&#x20;
+You can join an Organisation like this:&#x20;
 
 1. click Developer --> Extrinsics
 2. select `control` pallet and `addMember(orgId, accountId)` in the right dropdown
@@ -116,7 +117,23 @@ This is how you create a fundraising campaign:&#x20;
 1. use the account which was used to create the organisation under `using the selected account`
 2. click Developer --> Extrinsics
 3. select `flow` pallet and `createCampaign(...)` in the right dropdown
-4.
+4. fill all the fields
+   1. `orgId`: enter the `orgId` from the Organisation you created and which you copied before&#x20;
+   2. `adminId`: select the account which owns the Organisation&#x20;
+   3. `name`: add a nice name ("My Campaign")
+   4. `target`: `10000000000000000000` (for 10 PLAY)
+   5. `deposit`: `1000000000000000000` (for 1 GAME)
+   6. `expiry`: enter a block number which is in the future (look at the current block number on the top left of polkadot.js.org and add 600 blocks for 30 minutes or 1200 for 1h if you need more time for testing). \
+      🚧  At this expiry block number the campaign will expire. When it is not fully funded the users who funded the campaign will receive their token back. If it was funded in before this block number was processed the campaign was successful.  &#x20;
+   7. `protocol`: `Raise` (fundraising protocol)
+   8. `governance`: `No` (no campaign governance by the funding audience)
+   9. `cid`: `Qmeaj2DCJw71qwUZN8N2r4GVcBBGfqiyMMBrh15n2KbY7G`
+   10. `tokenSymbol`: `PLAY`
+   11. `tokenName`: `Play`
+   12. ![](<../.gitbook/assets/image (9).png>)
+   13. click `Submit Transaction`
+   14. click `Sign and Submit`
+5. ``
 
 ### Fund into campaign
 
