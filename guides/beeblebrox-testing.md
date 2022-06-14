@@ -91,15 +91,32 @@ Either go through the frontend process on haiku.gamedao.co and click the "+" but
    12. click `Submit Transaction`
    13. click `Sign and Submit`
 8. Check that your Organisation is created by clicking to Developer --> Chain State --> select `control` pallet and `orgsControlled(AccoundId32)` and submit the query by clicking the "+" button. Make sure the account is selected which you set as controller at 7.1. \
-   You should receive an `organisationId` which represents your Organisation
+   You should receive an `organisationId` which represents your Organisation. Copy that ID and note it down somewhere as you will need it in other steps.&#x20;
 
 ### Join Organisation
 
-...
+You can join an organisation like this:&#x20;
+
+1. click Developer --> Extrinsics
+2. select `control` pallet and `addMember(orgId, accountId)` in the right dropdown
+3. enter your organisationId which you received from Create Organisation process point 8
+4. choose an account which is not yet member in the Organisation and has enough ZERO & GAME balance.&#x20;
+5. ![](<../.gitbook/assets/image (5).png>)
+6. click `Submit Transaction`
+7. click `Sign and Submit`
+
+
+
+
 
 ### Create Fundraising campaign
 
-...
+This is how you create a fundraising campaign:&#x20;
+
+1. use the account which was used to create the organisation under `using the selected account`
+2. click Developer --> Extrinsics
+3. select `flow` pallet and `createCampaign(...)` in the right dropdown
+4.
 
 ### Fund into campaign
 
