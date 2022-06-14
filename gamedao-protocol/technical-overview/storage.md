@@ -8,9 +8,9 @@ The following sections contain Storage methods are part of the default Zero runt
 
 - **[flow](#flow)**
 
-- **[signal](#signal)**
-
 - **[sense](#sense)**
+
+- **[signal](#signal)**
 
 
 ___
@@ -190,13 +190,6 @@ ___
 ___
 
 
-## signal
- 
-TBD (this pallet is under refactoring right now)
-
-___
-
-
 ## sense
  
 ### SenseEntity(`AccountId`): `Entity`
@@ -218,3 +211,10 @@ ___
 ### Nonce: `u128`
 - **interface**: `api.query.sense.Nonce`
 - **summary**:   Nonce. Increase per each entity creation.
+
+___
+
+
+## signal
+ 
+TBD (this pallet is under refactoring right now)
