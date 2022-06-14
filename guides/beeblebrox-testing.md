@@ -1,4 +1,8 @@
 ---
+description: >-
+  With this end to end testing script you will be able to create an organisation
+  and a fundraising campaign, get the campaign funded and let the community vote
+  about sending the funds to your treasury.
 cover: ../.gitbook/assets/IP39-SchoolClassroom.jpg
 coverY: 0
 ---
@@ -7,7 +11,7 @@ coverY: 0
 
 In order to interact with the chain without frontend do the following steps to achieve an end2end result:
 
-### Configure Beeblebrox DEV Chain
+### 1. Configure Beeblebrox DEV Chain
 
 first you need to open your polkadot.js.org wallet and add the beeblebrox endpoint as a custom node.\
 
@@ -21,13 +25,11 @@ first you need to open your polkadot.js.org wallet and add the beeblebrox endpoi
    \
 
 
-
-
 {% hint style="danger" %}
-Recommendation for all actions is to have a browser tab opened which shows the Network --> Explorer. Have the "recent events" in your view when you perform transactions to copy hashes out of it.&#x20;
+Recommendation for all actions is: to have a separate browser window opened which shows the Network --> Explorer in polkadot.js.org. Have the "recent events" in your view when you perform transactions to copy response hashes out of it.&#x20;
 {% endhint %}
 
-### Get ZERO, GAME & PLAY token
+### 2. Get ZERO, GAME & PLAY token
 
 Get ZERO coin:
 
@@ -75,7 +77,7 @@ Get PLAY (stablecoin) token:
 
 &#x20;
 
-### Create Organisation
+### 3. Create Organisation
 
 Either go through the frontend process on haiku.gamedao.co and click the "+" button on the left navigation after connecting your wallet or follow this process:
 
@@ -103,7 +105,7 @@ Either go through the frontend process on haiku.gamedao.co and click the "+" but
    You should receive an `organisationId` which represents your Organisation. \
    🚧 Copy that ID and note it down somewhere as you will need it in other steps.&#x20;
 
-### Join Organisation
+### 4. Join Organisation
 
 You can join an Organisation like this:&#x20;
 
@@ -117,9 +119,7 @@ You can join an Organisation like this:&#x20;
 
 
 
-
-
-### Create Fundraising campaign
+### 5. Create Fundraising campaign
 
 This is how you create a fundraising campaign:&#x20;
 
@@ -146,7 +146,7 @@ This is how you create a fundraising campaign:&#x20;
    You should receive an `campaignId` which represents your Campaign. \
    🚧 Copy that ID and note it down somewhere as you will need it in other steps.&#x20;
 
-### Fund into campaign
+### 6. Fund into campaign
 
 Contribute into a campaign by:
 
@@ -165,7 +165,7 @@ Contribute into a campaign by:
 9. leave the window open until the expiry block is reached and see that 0.3% is substracted as a fee from the campaign. \
    &#x20;
 
-### Create withdrawal proposal
+### 7. Create withdrawal proposal
 
 After the campaign expired and was funded create a withdrawal proposal to let the community vote on transferring the funds to the organisation treasury:
 
@@ -185,7 +185,7 @@ After the campaign expired and was funded create a withdrawal proposal to let th
    11. click `Sign and Submit`
 4. switch to the tab with the recent events and copy the `proposalId` which was created
 
-### Vote for withdrawal
+### 8. Vote for withdrawal
 
 Vote for the withdrawal of funds:
 
@@ -200,11 +200,9 @@ Vote for the withdrawal of funds:
    6. click `Sign and Submit`
 4. check recent events tab when the block expiry date has arrived (in our scenario there is only 1 vote, which accomplishes the voting process immediately)&#x20;
 
-### check your treasury
+### 9. Check your treasury
 
 Now we check if we received the requested funds:
-
-
 
 1. click Developer --> Chain State
 2. select `control` pallet and `orgTreasury(256)` in the right dropdown
