@@ -20,7 +20,7 @@ Set up your polkadot.js wallet and obtain some ZERO token from the faucet bot in
    ![](<../.gitbook/assets/image (4).png>)\
 
 3. fill some details like display name and email or twitter:\
-   ![](<../.gitbook/assets/image (6).png>)
+   <img src="../.gitbook/assets/image (6).png" alt="" data-size="original">
 4. Click Set Identity and&#x20;
 5. Sign the transaction by clicking "Sign & Submit" and entering your wallet password.
 6. If it did not work, make sure you have some ZERO amount on your wallet.
@@ -29,7 +29,7 @@ Set up your polkadot.js wallet and obtain some ZERO token from the faucet bot in
 
 Now its time to create your first DAO.
 
-1. Go to [https://beta.gamedao.co/](https://beta.gamedao.co) and enter the app
+1. Go to [https://beta.gamedao.co/](https://beta.gamedao.co/) and enter the app
 2. Connect your wallet on the top right connect button
 3. Click  on Organisations on the left navigation to get to the Organisations List Page
 4. Click the "New DAO" button
