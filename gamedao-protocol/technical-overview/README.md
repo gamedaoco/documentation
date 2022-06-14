@@ -5,5 +5,6 @@ description: >-
   decentralised fashion, therefore the protocol is no
 ---
 
-# Technical Overview.
+# Technical Overview
 
+![](../../.gitbook/assets/IP39-Overrun.jpg)

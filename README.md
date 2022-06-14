@@ -4,6 +4,8 @@ description: GameDAO = Video Games + Community + DAO + DeFi + NFT
 
 # 🕹 GameDAO
 
+![](.gitbook/assets/IP39-DeepMarket.jpg)
+
 {% hint style="success" %}
 **Keep it real:** The contents of these pages, published under docs.gamedao.co are a collection of the latest developments of our protocols and not considered final. We live an open and transparent culture and therefore publicly share works in progress and knowledge, traditional minds would build another million dollar silo with.&#x20;
 {% endhint %}
