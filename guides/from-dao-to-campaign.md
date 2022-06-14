@@ -98,6 +98,6 @@ Raise a campaign to receive funds from your community.
 
 {% hint style="info" %}
 **Good to know:** The campaign can be funded directly from the Campaign List Page. When your campaign is successfully funded create a withdrawal proposal to access the funds.\
-Go on here: [Fundraising Withdrawal Proposal](fundraising-withdrawal-proposal.md)
+Go on here: [Fundraising Withdrawal Proposal](../fundamentals/fundraising/fundraising-withdrawal-proposal.md)
 {% endhint %}
 

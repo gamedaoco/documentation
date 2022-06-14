@@ -36,7 +36,13 @@ This shall contribute to the individual freedom of the community and the creatio
 
 **Got 2 minutes?** Check out a video overview of an early prototype:
 
-{% embed url="https://www.loom.com/share/3bfa83acc9fd41b7b98b803ba9197d90" %}
+{% embed url="https://www.youtube.com/watch?t=3s&v=SJQUj79Xg6o" %}
+early prototype
+{% endembed %}
+
+{% embed url="https://www.youtube.com/watch?v=Rw4HTxYJq-Q" %}
+review in the wild
+{% endembed %}
 
 ### Guides
 
