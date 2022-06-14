@@ -17,7 +17,7 @@ Set up your polkadot.js wallet and obtain some ZERO token from the faucet bot in
 1. go to [https://polkadot.js.org/apps/#/accounts](https://polkadot.js.org/apps/#/accounts) and select an account from below and find the three dots on the right:\
    ![](<../.gitbook/assets/image (5).png>)
 2. click "Set on-chain identity":\
-   ![](<../.gitbook/assets/image (4).png>)\
+   ![](<../.gitbook/assets/image (4) (1).png>)\
 
 3. fill some details like display name and email or twitter:\
    <img src="../.gitbook/assets/image (6).png" alt="" data-size="original">

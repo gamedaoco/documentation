@@ -32,6 +32,7 @@ Get ZERO coin:
 4. click `Submit Sudo`
 5. click `Sign and Submit` in the new modal
 6. repeat steps 3-5 while selecting another wallet address at 3.3 if you want to top up other accounts (<mark style="color:purple;">**recommended to have at least 3 accounts keeping ZERO tokens for later scenarios**</mark>)
+7. ![](<../.gitbook/assets/image (4).png>)
 
 Get GAME token:
 
@@ -67,16 +68,30 @@ Get PLAY (stablecoin) token:
 
 ### Create Organisation
 
-Either go through the frontend process on haiku.gamedao.co or follow this process:
+Either go through the frontend process on haiku.gamedao.co and click the "+" button on the left navigation after connecting your wallet or follow this process:
 
 1. click Developer --> Extrinsics
-2. ![](<../.gitbook/assets/image (1).png>)
-3. select under `control` pallet "submit the following extrinsic"
-4. select `createOrg(...)` in the right dropdown
-5. ![](<../.gitbook/assets/image (9).png>)
-6.
-
-
+2. ![](<../.gitbook/assets/image (1).png>)&#x20;
+3. 🚧 select one of the accounts you just topped up with ZERO & GAME balances under `using the selected account` (do not use Alice for this)
+4. select under `control` pallet "submit the following extrinsic"
+5. select `createOrg(...)` in the right dropdown
+6. ![](<../.gitbook/assets/image (9).png>)
+7. fill all the fields:
+   1. controllerId: select one of the accounts you just topped up with ZERO & GAME balances&#x20;
+   2. `name`: enter some name (your Organisation name)
+   3. `cid`: Qmeaj2DCJw71qwUZN8N2r4GVcBBGfqiyMMBrh15n2KbY7G (a prefilled Content ID on IPFS containing description and logo)
+   4. `orgType`: select any (eg. Individual)
+   5. `access`: Open&#x20;
+   6. `feeModel`: `NoFees` (or select `Transfer` if your Organisation wants to collect entry fees)
+   7. `fee`: enter eg. `1000000000000000000` if you selected `Transfer` or `Reserve` in point 5 or leave 0 if `NoFees` was selected
+   8. `govAsset`: `1` --> which represents GAME token
+   9. `payAsset`: `2` --> which represents PLAY token
+   10. `memberLimit`: add eg. `100` for a limit of 100 members
+   11. `deposit`: add `10000000000000000000` for a deposit of 10 GAME
+   12. click `Submit Transaction`
+   13. click `Sign and Submit`
+8. Check that your Organisation is created by clicking to Developer --> Chain State --> select `control` pallet and `orgsControlled(AccoundId32)` and submit the query by clicking the "+" button. Make sure the account is selected which you set as controller at 7.1. \
+   You should receive an `organisationId` which represents your Organisation
 
 ### Join Organisation
 
