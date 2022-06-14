@@ -9,7 +9,7 @@
 * [🪄 From DAO to Campaign](guides/from-dao-to-campaign.md)
 * [💡 Discover, Curate, Contribute: The lifecycle of a Campaign](guides/discover-curate-contribute-the-lifecycle-of-a-campaign.md)
 * [🍒 Realms](guides/realms.md)
-* [👨‍👦 Beeblebrox Testing] (guides/beeblebrox-testing.md)
+* [👨‍👦 Beeblebrox Testing](guides/beeblebrox-testing.md)
 
 ## Fundamentals
 
