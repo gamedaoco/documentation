@@ -187,10 +187,6 @@ ___
 - **interface**: `api.query.flow.Nonce`
 - **summary**:   	Nonce. Increase per each campaign creation.
 
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
 ___
 
 
