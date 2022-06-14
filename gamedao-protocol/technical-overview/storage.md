@@ -2,7 +2,7 @@
 title: Storage
 ---
 
-The following sections contain Storage methods are part of the default Zero runtime. On the api, these are exposed via `api.query.<module>.<method>`. 
+The following sections contain Storage methods are part of the default runtime. On the api, these are exposed via `api.query.<module>.<method>`. 
 
 - **[control](#control)**
 
@@ -187,6 +187,10 @@ ___
 - **interface**: `api.query.flow.Nonce`
 - **summary**:   	Nonce. Increase per each campaign creation.
 
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 ___
 
 
