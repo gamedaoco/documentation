@@ -1,4 +1,4 @@
-# Fundraising Withdrawal Proposal
+# 💰 Fundraising Withdrawal Proposal
 
 Congratulations! Your fundraising campaign was successful. Now it is time to ask the community to release the funds to your Organisation Treasury Account.
 
