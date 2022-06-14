@@ -1,3 +1,8 @@
+---
+cover: ../.gitbook/assets/IP39-SchoolClassroom.jpg
+coverY: 0
+---
+
 # 🍒 Realms
 
 GameDAO provides easy mechanisms to qualify projects in various regards: Like in open worlds we are working with the idea of Realms which cluster certain aspects of projects. This results in two main categories: open and discover.&#x20;

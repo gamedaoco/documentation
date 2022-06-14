@@ -1,6 +1,9 @@
-# 🎮 GameDAO: The DAO of DAOs
+---
+cover: ../.gitbook/assets/IP39-SchoolCorridor.jpg
+coverY: 0
+---
 
-![](../.gitbook/assets/IP39-SchoolClassroom.jpg)
+# 🎮 GameDAO: The DAO of DAOs
 
 {% hint style="info" %}
 **Good to know:** Splitting your product into fundamental concepts, objects, or areas can be a great way to let readers deep dive into the concepts that matter most to them.

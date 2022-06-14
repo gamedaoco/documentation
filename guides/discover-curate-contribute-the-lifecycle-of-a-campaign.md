@@ -1,5 +1,7 @@
 ---
 description: Campaigns are not only created based on
+cover: ../.gitbook/assets/IP39-SchoolClassroom.jpg
+coverY: 0
 ---
 
 # 💡 Discover, Curate, Contribute: The lifecycle of a Campaign

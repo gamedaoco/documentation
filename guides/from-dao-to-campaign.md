@@ -2,6 +2,8 @@
 description: >-
   This walk through will show you the essential steps to create a successful
   fundraising campaign on GameDAO
+cover: ../.gitbook/assets/IP39-SchoolClassroom.jpg
+coverY: 0
 ---
 
 # 🪄 From DAO to Campaign

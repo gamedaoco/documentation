@@ -1,10 +1,10 @@
 ---
 description: GameDAO = Video Games + Community + DAO + DeFi + NFT
+cover: .gitbook/assets/IP39-DeepMarket.jpg
+coverY: 0
 ---
 
 # 🕹 GameDAO
-
-![](.gitbook/assets/IP39-DeepMarket.jpg)
 
 {% hint style="success" %}
 **Keep it real:** The contents of these pages, published under docs.gamedao.co are a collection of the latest developments of our protocols and not considered final. We live an open and transparent culture and therefore publicly share works in progress and knowledge, traditional minds would build another million dollar silo with.&#x20;
@@ -19,6 +19,8 @@ GameDAO is built with [substrate](https://substrate.io), a cutting edge blockcha
 GameDAO Protocol provides primitives for invocation and operation of decentralised organisations (DAOs), utilisation of decentralised finance (DeFi) instruments for fundraising and non-fungible token (NFT) to provide a comprehensive solution for license management and projects related loot drops. The protocol is designed and operated in a decentralised fashion, enabling programmatic access to everyone.
 
 GameDAO AG also develops the decentralised application frontend accessible through https://app.gamedao.co, and others, to enable non technical entities to utilise these protocols with some additional safeguards, making them usable in a reasonable, secure and compliant way.
+
+![](.gitbook/assets/headerimg.png)
 
 ### **Community owned by design**
 

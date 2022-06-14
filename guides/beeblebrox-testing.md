@@ -1,4 +1,9 @@
-# 👨‍👦 Beeblebrox Testing
+---
+cover: ../.gitbook/assets/IP39-SchoolClassroom.jpg
+coverY: 0
+---
+
+# 🧑🎓 Beeblebrox Testing
 
 In order to interact with the chain without frontend do the following steps to achieve an end2end result:
 

@@ -3,6 +3,8 @@ description: >-
   In order to interact with GameDAO websites and protocols, you will need a
   wallet, an account and token. The following steps will guide you to get
   everything to get started on GameDAO!
+cover: ../.gitbook/assets/IP39-SchoolClassroom.jpg
+coverY: 0
 ---
 
 # 💌 Install Polkadot wallet and create an Account
