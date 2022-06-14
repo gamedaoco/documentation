@@ -133,11 +133,27 @@ This is how you create a fundraising campaign:&#x20;
    12. ![](<../.gitbook/assets/image (9).png>)
    13. click `Submit Transaction`
    14. click `Sign and Submit`
-5. ``
+5. Check that your `campaignId` is created by clicking to Developer --> Chain State --> select `flow` pallet and `campaignsByOrg(H256)`and add your `organisationId` as the parameter `H256` and submit the query by clicking the "+" button.  \
+   You should receive an `campaignId` which represents your Campaign. \
+   🚧 Copy that ID and note it down somewhere as you will need it in other steps.&#x20;
 
 ### Fund into campaign
 
-...
+Contribute into a campaign by:
+
+
+
+1. click Developer --> Extrinsics
+2. select `flow` pallet and `contribute(campaignId, contribution)` in the right dropdown
+3. use another account and not the one which you used to create the campaign. Preferably use an account which is not even member of the organisation. was used to create the organisation under `using the selected account`
+4. Fill all the fields
+   1. `campaignId`: add the copied `campaignId`
+   2. `contribution`: `11000000000000000000` 11 PLAY to overachieve the target of 10 PLAY&#x20;
+5. ![](<../.gitbook/assets/image (6).png>)
+6. click `Submit Transaction`
+7. click `Sign and Submit`
+8. Check that your `campaignId` is funded by clicking to Developer --> Chain State --> select `flow` pallet and `campaignsBalance(H256)`and add your `campaignId` as the parameter `H256` and submit the query by clicking the "+" button.  \
+   &#x20;
 
 ### Create withdrawal proposal
 

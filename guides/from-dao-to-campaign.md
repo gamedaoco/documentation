@@ -20,7 +20,7 @@ Set up your polkadot.js wallet and obtain some ZERO token from the faucet bot in
    ![](<../.gitbook/assets/image (4) (1).png>)\
 
 3. fill some details like display name and email or twitter:\
-   <img src="../.gitbook/assets/image (6).png" alt="" data-size="original">
+   <img src="../.gitbook/assets/image (6) (1).png" alt="" data-size="original">
 4. Click Set Identity and&#x20;
 5. Sign the transaction by clicking "Sign & Submit" and entering your wallet password.
 6. If it did not work, make sure you have some ZERO amount on your wallet.
