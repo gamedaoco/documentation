@@ -23,6 +23,10 @@ first you need to open your polkadot.js.org wallet and add the beeblebrox endpoi
 
 
 
+{% hint style="danger" %}
+Recommendation for all actions is to have a browser tab opened which shows the Network --> Explorer. Have the "recent events" in your view when you perform transactions to copy hashes out of it.&#x20;
+{% endhint %}
+
 ### Get ZERO, GAME & PLAY token
 
 Get ZERO coin:
@@ -36,7 +40,7 @@ Get ZERO coin:
    4. field `newReserved`: leave 0 inside
 4. click `Submit Sudo`
 5. click `Sign and Submit` in the new modal
-6. repeat steps 3-5 while selecting another wallet address at 3.3 if you want to top up other accounts (<mark style="color:purple;">**recommended to have at least 3 accounts keeping ZERO tokens for later scenarios**</mark>)
+6. repeat steps 3-5 while selecting another wallet address at 3.3 if you want to top up other accounts (<mark style="color:purple;">**recommended to have at least 3 accounts keeping ZERO tokens for later scenarios: eg. account1, account2, account3**</mark>)
 7. ![](<../.gitbook/assets/image (4).png>)
 
 Get GAME token:
@@ -50,8 +54,8 @@ Get GAME token:
    4. field `amount`:  enter `1000000000000000000000` to receive 1000 GAME
 4. click `Submit Sudo`
 5. click `Sign and Submit` in the new modal
-6. repeat steps 3-5 while selecting another wallet address at 3.2 if you want to top up other accounts (<mark style="color:purple;">**recommended to have at least 3 accounts keeping GAME tokens for later scenarios**</mark>)
-7. ![](<../.gitbook/assets/image (3).png>)
+6. repeat steps 3-5 while selecting another wallet address at 3.2 if you want to top up other accounts (<mark style="color:purple;">**recommended to have at least 3 accounts keeping GAME tokens for later scenarios: eg. account1, account2, account3**</mark>)
+7. ![](<../.gitbook/assets/image (3) (1).png>)
 
 
 
@@ -66,8 +70,8 @@ Get PLAY (stablecoin) token:
    4. field `amount`:  enter `1000000000000000000000` to receive 1000 PLAY
 4. click `Submit Sudo`
 5. click `Sign and Submit` in the new modal
-6. repeat steps 3-5 while selecting another wallet address at 3.2 if you want to top up other accounts (<mark style="color:purple;">**recommended to have at least 3 accounts keeping PLAY tokens for later scenarios**</mark>)
-7. ![](../.gitbook/assets/image.png)
+6. repeat steps 3-5 while selecting another wallet address at 3.2 if you want to top up other accounts (<mark style="color:purple;">**recommended to have at least 3 accounts keeping PLAY tokens for later scenarios: eg. account1, account2, account3**</mark>)
+7. ![](<../.gitbook/assets/image (1).png>)
 
 &#x20;
 
@@ -76,8 +80,8 @@ Get PLAY (stablecoin) token:
 Either go through the frontend process on haiku.gamedao.co and click the "+" button on the left navigation after connecting your wallet or follow this process:
 
 1. click Developer --> Extrinsics
-2. ![](<../.gitbook/assets/image (1).png>)&#x20;
-3. 🚧 select one of the accounts you just topped up with ZERO & GAME balances under `using the selected account` (do not use Alice for this)
+2. ![](<../.gitbook/assets/image (1) (1).png>)&#x20;
+3. 🚧 select one of the accounts you just topped up with ZERO & GAME balances under `using the selected account` (do not use Alice for this, use <mark style="color:purple;">**account1**</mark>)
 4. select under `control` pallet "submit the following extrinsic"
 5. select `createOrg(...)` in the right dropdown
 6. ![](<../.gitbook/assets/image (9) (1).png>)
@@ -106,7 +110,7 @@ You can join an Organisation like this:&#x20;
 1. click Developer --> Extrinsics
 2. select `control` pallet and `addMember(orgId, accountId)` in the right dropdown
 3. enter your organisationId which you received from Create Organisation process point 8
-4. choose an account which is not yet member in the Organisation and has enough ZERO & GAME balance.&#x20;
+4. choose an account (<mark style="color:purple;">**account2**</mark>) which is not yet member in the Organisation and has enough ZERO & GAME balance.&#x20;
 5. ![](<../.gitbook/assets/image (5).png>)
 6. click `Submit Transaction`
 7. click `Sign and Submit`
@@ -119,7 +123,7 @@ You can join an Organisation like this:&#x20;
 
 This is how you create a fundraising campaign:&#x20;
 
-1. use the account which was used to create the organisation under `using the selected account`
+1. use the account (<mark style="color:purple;">**account1**</mark>) which was used to create the organisation under `using the selected account`
 2. click Developer --> Extrinsics
 3. select `flow` pallet and `createCampaign(...)` in the right dropdown
 4. fill all the fields
@@ -150,24 +154,72 @@ Contribute into a campaign by:
 
 1. click Developer --> Extrinsics
 2. select `flow` pallet and `contribute(campaignId, contribution)` in the right dropdown
-3. use another account and not the one which you used to create the campaign. Preferably use an account which is not even member of the organisation. was used to create the organisation under `using the selected account`
+3. use another account (<mark style="color:purple;">**account3**</mark>) and not the one which you used to create the campaign. Preferably use an account which is not even member of the organisation. was used to create the organisation under `using the selected account`
 4. Fill all the fields
    1. `campaignId`: add the copied `campaignId`
    2. `contribution`: `11000000000000000000` 11 PLAY to overachieve the target of 10 PLAY&#x20;
 5. ![](<../.gitbook/assets/image (6).png>)
 6. click `Submit Transaction`
 7. click `Sign and Submit`
-8. Check that your `campaignId` is funded by clicking to Developer --> Chain State --> select `flow` pallet and `campaignsBalance(H256)`and add your `campaignId` as the parameter `H256` and submit the query by clicking the "+" button.  \
+8. Check that your `campaignId` is funded by clicking to Developer --> Chain State --> select `flow` pallet and `campaignsBalance(H256)`and add your `campaignId` as the parameter `H256` and submit the query by clicking the "+" button. &#x20;
+9. leave the window open until the expiry block is reached and see that 0.3% is substracted as a fee from the campaign. \
    &#x20;
 
 ### Create withdrawal proposal
 
-...
+After the campaign expired and was funded create a withdrawal proposal to let the community vote on transferring the funds to the organisation treasury:
+
+1. click Developer --> Extrinsics
+2. select `signal` pallet and `withdrawProposal(campaignId, title, cid, amount, start, expiry)` in the right dropdown
+3. Fill all the fields
+   1. use the account which created the campaign (<mark style="color:purple;">**account1**</mark>) under `using the selected account`
+   2. `campaignId`: the `campaignId` which was funded
+   3. `title`: give your proposal a name like "withdraw funds"
+   4. cid: `Qmeaj2DCJw71qwUZN8N2r4GVcBBGfqiyMMBrh15n2KbY7G` (content ID for proposal content)
+   5. `amount`: `10000000000000000000`
+   6. `start:` add `block number (`choose a block number in the near future)
+   7. `expiry:`add `block number (`choose a block number in the future which allows you to have enough time to vote on the proposal ( eg. 300 blocks more than the starting block number for 15 minutes of voting time)
+   8. ![](<../.gitbook/assets/image (3).png>)
+   9. 🚧  open in a new tab the Network --> Explorer. Have the "recent events" in your view when you perform the transaction so that you can copy the `proposalId`
+   10. click `Submit Transaction`
+   11. click `Sign and Submit`
+4. switch to the tab with the recent events and copy the `proposalId` which was created
 
 ### Vote for withdrawal
 
-...
+Vote for the withdrawal of funds:
+
+1. click Developer --> Extrinsics
+2. select `signal` pallet and `simpleVote(proposalId, vote)` in the right dropdown
+3. Fill all the fields
+   1. use the account which funded into the campaign (<mark style="color:purple;">**account3**</mark>) under `using the selected account`
+   2. propsalId: add the proposalId which you copied before from the recent events
+   3. `vote`: `Yes`
+   4. ``![](<../.gitbook/assets/image (11).png>)
+   5. click `Submit Transaction`
+   6. click `Sign and Submit`
+4. check recent events tab when the block expiry date has arrived (in our scenario there is only 1 vote, which accomplishes the voting process immediately)&#x20;
 
 ### check your treasury
 
-...
+Now we check if we received the requested funds:
+
+
+
+1. click Developer --> Chain State
+2. select `control` pallet and `orgTreasury(256)` in the right dropdown
+3. fill the field H256 with the `organizationId` you have noted down in the beginning (or query chain state with "memberships" call)
+4. click the "+" to submit the query
+5. copy the response hash and note it down (this is your `accountId` of the Organisation Treasruy)
+6. switch pallet to `tokens` and `accounts(AccountId, u32)`&#x20;
+7. enter the copied Treasury hash into the `accountId`
+8. toggle off  `include option`
+9. click the "+" to submit the query
+10. see that you hold free 10 PLAY and 0.967 are still reserved as you only requested 10 PLAY in your withdrawal proposal:
+
+    ```
+    free: 10,000,000,000,000,000,000
+    reserved: 967,000,000,000,000,000
+    ```
+11. ![](<../.gitbook/assets/image (8).png>)
+
