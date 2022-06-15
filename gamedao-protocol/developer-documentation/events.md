@@ -113,4 +113,30 @@ ___
 
 ## signal
  
-TBD (this pallet is under refactoring right now)
+### Proposal(sender_id: `AccountId`, proposal_id: `Hash`)
+- **interface**: `api.events.signal.Proposal.is`
+- **summary**:    Proposal was successfully created (ex. General proposal).
+
+### ProposalCreated(sender_id: `AccountId`, org_id: `Hash`, campaign_id: `Option<Hash>`, proposal_id: `Hash`, amount: `Balance`, expiry: `BlockNumber`)
+- **interface**: `api.events.signal.ProposalCreated.is`
+- **summary**:    Proposal was successfully created (ex. Withdrawal proposal).
+
+### ProposalVoted(sender_id: `AccountId`, proposal_id: `Hash`, vote: `bool`)
+- **interface**: `api.events.signal.ProposalVoted.is`
+- **summary**:     Proposal was voted.
+
+### ProposalApproved(proposal_id: `Hash`)
+- **interface**: `api.events.signal.ProposalApproved.is`
+- **summary**:     Proposal was approved after the voting.
+
+### ProposalRejected(proposal_id: `Hash`)
+- **interface**: `api.events.signal.ProposalRejected.is`
+- **summary**:     Proposal was rejected after the voting.
+
+### ProposalExpired(proposal_id: `Hash`)
+- **interface**: `api.events.signal.ProposalExpired.is`
+- **summary**:     Proposal was expired, not finalized before expiry block number.
+
+### WithdrawalGranted(proposal_id: `Hash`, campaign_id: `Hash`, org_id: `Hash`)
+- **interface**: `api.events.signal.WithdrawalGranted.is`
+- **summary**:     Balance was unlocked for the Withdrawal proposal.

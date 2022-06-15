@@ -38,11 +38,11 @@ ___
 - **interface**: `api.consts.control.maxMembersPerDAO`
 - **summary**:    The max number of members per one DAO.
 
-### protocolTokenId: `u32`
+### protocolTokenId: `CurrencyId`
 - **interface**: `api.consts.control.protocolTokenId`
 - **summary**:    The CurrencyId which is used as a protokol token.
 
-### paymentTokenId: `u32`
+### paymentTokenId: `CurrencyId`
 - **interface**: `api.consts.control.paymentTokenId`
 - **summary**:    The CurrencyId which is used as a payment token.
 
@@ -87,11 +87,11 @@ ___
 - **interface**: `api.consts.flow.maxCampaignDuration`
 - **summary**:    The max number of blocks for campaign duration.
 
-### protocolTokenId: `u32`
+### protocolTokenId: `CurrencyId`
 - **interface**: `api.consts.flow.protocolTokenId`
 - **summary**:    The CurrencyId which is used as a protokol token.
 
-### paymentTokenId: `u32`
+### paymentTokenId: `CurrencyId`
 - **interface**: `api.consts.flow.paymentTokenId`
 - **summary**:    The CurrencyId which is used as a payment token.
 
@@ -111,4 +111,18 @@ ___
 
 ## signal
 
-TBD (this pallet is under refactoring right now)
+### MaxProposalsPerBlock: `u32`
+- **interface**: `api.consts.signal.MaxProposalsPerBlock`
+- **summary**:    The max number of proposals per one block.
+
+### MaxProposalDuration: `u32`
+- **interface**: `api.consts.signal.MaxProposalDuration`
+- **summary**:   The maximum time limit for a proposal in blocks.
+
+### protocolTokenId: `CurrencyId`
+- **interface**: `api.consts.signal.protocolTokenId`
+- **summary**:    The CurrencyId which is used as a protokol token.
+
+### paymentTokenId: `CurrencyId`
+- **interface**: `api.consts.signal.paymentTokenId`
+- **summary**:    The CurrencyId which is used as a payment token.
