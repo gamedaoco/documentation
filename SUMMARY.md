@@ -30,12 +30,14 @@
 
 ## GameDAO Protocol
 
-* [📖 Technical Overview](gamedao-protocol/technical-overview/README.md)
-  * [Extrinsics](gamedao-protocol/technical-overview/extrinsics.md)
-  * [Storage](gamedao-protocol/technical-overview/storage.md)
-  * [Events](gamedao-protocol/technical-overview/events.md)
-  * [Errors](gamedao-protocol/technical-overview/errors.md)
-  * [Constants](gamedao-protocol/technical-overview/constants.md)
+
+* [📖 Developer Documentation](gamedao-protocol/developer-documentation/README.md)
+  * [Extrinsics](gamedao-protocol/developer-documentation/extrinsics.md)
+  * [Storage](gamedao-protocol/developer-documentation/storage.md)
+  * [Events](gamedao-protocol/developer-documentation/events.md)
+  * [Errors](gamedao-protocol/developer-documentation/errors.md)
+  * [Constants](gamedao-protocol/developer-documentation/constants.md)
+* [📖 Technical Overview](gamedao-protocol/technical-overview.md)
 * [🚀 Unstoppable Organisations](gamedao-protocol/unstoppable-organisations.md)
 * [⚖ Proposals + Voting](gamedao-protocol/proposals-+-voting.md)
 * [💸 Fundraising](gamedao-protocol/fundraising/README.md)
