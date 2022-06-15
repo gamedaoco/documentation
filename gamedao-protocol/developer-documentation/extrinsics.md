@@ -202,4 +202,56 @@ ___
 
 ## signal
 
-TBD (this pallet is under refactoring right now)
+### general_proposal(org_id: `Hash`, title: `Vec<u8>`, cid: `Vec<u8>`, start: `BlockNumber`, expiry: `BlockNumber`)
+- **interface**: `api.tx.signal.general_proposal`
+- **summary**:   Create a general proposal.
+
+	- `org_id`: Organisation id.
+	- `title`: Proposal's title.
+	- `cid`: IPFS content identifier.
+	- `start`: Block when the proposal starts.
+	- `expiry`: Block when the proposal finishes.
+
+   Emits `Proposal` event when successful.
+
+   Weight: `O(1)`
+
+### membership_proposal(org_id: `Hash`, member: `AccountId`, action: `u8`, start: `BlockNumber`, expiry: `BlockNumber`)
+- **interface**: `api.tx.signal.membership_proposal`
+- **summary**:   Create a membership proposal.
+
+	- `org_id`: Organisation id.
+	- `member`: Proposal's title.
+	- `action`: Action to take.
+	- `start`: Block when the proposal starts.
+	- `expiry`: Block when the proposal finishes.
+
+   Emits `Proposal` event when successful.
+
+   Weight: `O(1)`
+
+### withdraw_proposal(campaign_id: `Hash`, title: `Vec<u8>`, cid: `Vec<u8>`, amount: `Balance`, start: `BlockNumber`, expiry: `BlockNumber`)
+- **interface**: `api.tx.signal.withdraw_proposal`
+- **summary**:   Create a withdrawal proposal.
+
+	- `campaign_id`: Campaign id.
+	- `title`: Proposal's title.
+	- `cid`: IPFS content identifier.
+	- `amount`: Balance to be withdrawn.
+	- `start`: Block when the proposal starts.
+	- `expiry`: Block when the proposal finishes.
+
+   Emits `ProposalCreated` event when successful.
+
+   Weight: `O(1)`
+
+### simple_vote(proposal_id: `Hash`, vote: `bool`)
+- **interface**: `api.tx.signal.simple_vote`
+- **summary**:   Create a simple voting
+
+	- `proposal_id`: Proposal id.
+	- `vote`: yes / no.
+
+   Emits `ProposalVoted` event when successful.
+
+   Weight:

@@ -218,11 +218,73 @@ ___
 
 ### EntityPropertyOverflow
 - **interface**: `api.errors.sense.EntityPropertyOverflow.is`
-- **summary**:    Overflow adding a value to the entity property
+- **summary**:    Overflow adding a value to the entity property.
 
 ___
 
 
 ## signal
  
-TBD (this pallet is under refactoring right now)
+### ProposalEnded
+- **interface**: `api.errors.signal.ProposalEnded.is`
+- **summary**:     Proposal ended.
+
+### ProposalExists
+- **interface**: `api.errors.signal.ProposalExists.is`
+- **summary**:     Proposal already exists.
+
+### ProposalExpired
+- **interface**: `api.errors.signal.ProposalExpired.is`
+- **summary**:     Proposal expired.
+
+### AlreadyVoted
+- **interface**: `api.errors.signal.AlreadyVoted.is`
+- **summary**:     Proposal already voted.
+
+### ProposalUnknown
+- **interface**: `api.errors.signal.ProposalUnknown.is`
+- **summary**:     Proposal id unknown.
+
+### DAOInactive
+- **interface**: `api.errors.signal.DAOInactive.is`
+- **summary**:     Org status is Inactive.
+
+### AuthorizationError
+- **interface**: `api.errors.signal.AuthorizationError.is`
+- **summary**:    Authorization error.
+
+### OutOfBounds
+- **interface**: `api.errors.signal.OutOfBounds.is`
+- **summary**:     Proposal bounds error: start, end, current, expiry blocks not match.
+
+### MemberExists
+- **interface**: `api.errors.signal.MemberExists.is`
+- **summary**:     Member already exists.
+
+### CampaignUnknown
+- **interface**: `api.errors.signal.CampaignUnknown.is`
+- **summary**:    Campaign id unknown.
+
+### CampaignFailed
+- **interface**: `api.errors.signal.CampaignFailed.is`
+- **summary**:   Campaign failed.
+
+### BalanceInsufficient
+- **interface**: `api.errors.signal.BalanceInsufficient.is`
+- **summary**:   Balance too low.
+
+### TooManyProposals
+- **interface**: `api.errors.signal.TooManyProposals.is`
+- **summary**:   Too many proposals for block.
+
+### NoProposalOwner
+- **interface**: `api.errors.signal.NoProposalOwner.is`
+- **summary**:   Proposal has no owner.
+
+### OverflowError
+- **interface**: `api.errors.signal.OverflowError.is`
+- **summary**:   Overflow error.
+
+### DivisionError
+- **interface**: `api.errors.signal.DivisionError.is`
+- **summary**:   Division error.
