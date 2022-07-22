@@ -17,9 +17,9 @@ A DAO is the minimum primitive you need to establish to get organised with your 
 Set up your polkadot.js wallet and obtain some ZERO token from the faucet bot in our Discord Channel as described in [previous chapter](installing-your-wallet.md) and set an on-chain identity like this:
 
 1. go to [https://polkadot.js.org/apps/#/accounts](https://polkadot.js.org/apps/#/accounts) and select an account from below and find the three dots on the right:\
-   ![](<../.gitbook/assets/image (5) (1).png>)
+   ![](<../.gitbook/assets/image (5) (1) (1).png>)
 2. click "Set on-chain identity":\
-   ![](<../.gitbook/assets/image (4) (1).png>)\
+   ![](<../.gitbook/assets/image (4) (1) (1).png>)\
 
 3. fill some details like display name and email or twitter:\
    <img src="../.gitbook/assets/image (6) (1).png" alt="" data-size="original">

@@ -10,7 +10,7 @@
 * [💡 Discover, Curate, Contribute: The lifecycle of a Campaign](guides/discover-curate-contribute-the-lifecycle-of-a-campaign.md)
 * [🍒 Realms](guides/realms.md)
 * [💰 Fundraising Withdrawal Proposal](fundamentals/fundraising/fundraising-withdrawal-proposal.md)
-* [🧑🎓 Beeblebrox Testing](guides/beeblebrox-testing.md)
+* [🧑🎓 🧑🎓 Beeblebrox Testing](guides/beeblebrox-testing.md)
 
 ## Fundamentals
 
@@ -29,7 +29,6 @@
 * [Engineers + Integrators](use-cases/engineers-+-integrators.md)
 
 ## GameDAO Protocol
-
 
 * [📖 Developer Documentation](gamedao-protocol/developer-documentation/README.md)
   * [Extrinsics](gamedao-protocol/developer-documentation/extrinsics.md)

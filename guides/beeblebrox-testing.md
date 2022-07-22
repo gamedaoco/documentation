@@ -7,7 +7,7 @@ cover: ../.gitbook/assets/IP39-SchoolClassroom.jpg
 coverY: 0
 ---
 
-# 🧑🎓 Beeblebrox Testing
+# 🧑🎓 🧑🎓 Beeblebrox Testing
 
 In order to interact with the chain without frontend do the following steps to achieve an end2end result:
 
@@ -43,7 +43,7 @@ Get ZERO coin:
 4. click `Submit Sudo`
 5. click `Sign and Submit` in the new modal
 6. repeat steps 3-5 while selecting another wallet address at 3.3 if you want to top up other accounts (<mark style="color:purple;">**recommended to have at least 3 accounts keeping ZERO tokens for later scenarios: eg. account1, account2, account3**</mark>)
-7. ![](<../.gitbook/assets/image (4).png>)
+7. ![](<../.gitbook/assets/image (4) (1).png>)
 
 Get GAME token:
 
@@ -113,7 +113,7 @@ You can join an Organisation like this:&#x20;
 2. select `control` pallet and `addMember(orgId, accountId)` in the right dropdown
 3. enter your organisationId which you received from Create Organisation process point 8
 4. choose an account (<mark style="color:purple;">**account2**</mark>) which is not yet member in the Organisation and has enough ZERO & GAME balance.&#x20;
-5. ![](<../.gitbook/assets/image (5).png>)
+5. ![](<../.gitbook/assets/image (5) (1).png>)
 6. click `Submit Transaction`
 7. click `Sign and Submit`
 
@@ -179,7 +179,7 @@ After the campaign expired and was funded create a withdrawal proposal to let th
    5. `amount`: `10000000000000000000`
    6. `start:` add `block number (`choose a block number in the near future)
    7. `expiry:`add `block number (`choose a block number in the future which allows you to have enough time to vote on the proposal ( eg. 300 blocks more than the starting block number for 15 minutes of voting time)
-   8. ![](<../.gitbook/assets/image (3).png>)
+   8. ![](<../.gitbook/assets/image (4).png>)
    9. 🚧  open in a new tab the Network --> Explorer. Have the "recent events" in your view when you perform the transaction so that you can copy the `proposalId`
    10. click `Submit Transaction`
    11. click `Sign and Submit`

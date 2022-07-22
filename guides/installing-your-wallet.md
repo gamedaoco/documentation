@@ -107,15 +107,18 @@ As this is an open testnet, there are still no monetary values being moved aroun
 To get all of the above token, you may use the faucet integrated into our discord here:&#x20;
 
 1. Join our Discord channel to obtain some ZERO tokens: [https://discord.gg/P7NHWGzJ7r](https://discord.gg/P7NHWGzJ7r)
-2. Find the faucet channel in the category ZERO MULTIVERSE:\
+2. Go to press start channel in ENTER GAMEDAO category: \
+   ![](../.gitbook/assets/image.png)
+3. Click the moneybag icon :moneybag:to get the Web3 Weirdo role so that you can use the faucet:![](<../.gitbook/assets/image (5).png>)
+4. Find the faucet channel in the category ZERO NETWORK:\
    ![](<../.gitbook/assets/image (3) (1) (1).png>)\
 
-3. Enter in the chat the following statement:\
-   `!fc get #your walletaddress#`\
+5. Enter in the chat the following statement:\
+   `!loot get #your walletaddress#`\
    For this wallet in the example the statement to post in the faucet channel would be:\
-   `!fc get 3aVbhhBLSyUVAgy4rzizaF7dY5ZXuVX8bQiDnyGmvzsvXCdi`\
+   `!loot get 3aVbhhBLSyUVAgy4rzizaF7dY5ZXuVX8bQiDnyGmvzsvXCdi`\
    The faucet bot will send you 10 ZERO, 10 GAME, 10 PLAY.
-4. Success, now you can interact with GameDAO :money\_with\_wings:.
+6. Success, now you can interact with GameDAO :money\_with\_wings:.
 
 {% hint style="info" %}
 If you don’t know your wallet address follow the steps described in "Switch Polkadot{.js} to ZERO test network" to find out.
