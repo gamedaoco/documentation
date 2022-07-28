@@ -45,22 +45,6 @@ Get ZERO coin:
 6. repeat steps 3-5 while selecting another wallet address at 3.3 if you want to top up other accounts (<mark style="color:purple;">**recommended to have at least 3 accounts keeping ZERO tokens for later scenarios: eg. account1, account2, account3**</mark>)
 7. ![](<../.gitbook/assets/image (4) (1).png>)
 
-Get GAME token:
-
-1. click Developer --> Sudo
-2. under "submit the following change" select `currencies`
-3. in the right dropdown select `updateBalance(who, currencyId, amount)`
-   1. field `who`: keep `Id` selected
-   2. field `Id`: select your personal wallet address which should receive GAME tokens
-   3. field `currencyId`: enter `1` for GAME token
-   4. field `amount`:  enter `1000000000000000000000` to receive 1000 GAME
-4. click `Submit Sudo`
-5. click `Sign and Submit` in the new modal
-6. repeat steps 3-5 while selecting another wallet address at 3.2 if you want to top up other accounts (<mark style="color:purple;">**recommended to have at least 3 accounts keeping GAME tokens for later scenarios: eg. account1, account2, account3**</mark>)
-7. ![](<../.gitbook/assets/image (3) (1).png>)
-
-
-
 Get PLAY (stablecoin) token:
 
 1. click Developer --> Sudo
@@ -68,8 +52,24 @@ Get PLAY (stablecoin) token:
 3. in the right dropdown select `updateBalance(who, currencyId, amount)`
    1. field `who`: keep `Id` selected
    2. field `Id`: select your personal wallet address which should receive PLAY tokens
-   3. field `currencyId`: enter `2` for PLAY token
-   4. field `amount`:  enter `1000000000000000000000` to receive 1000 PLAY
+   3. field `currencyId`: enter `1` for PLAY token
+   4. field `amount`:  enter `10000000000000` to receive 1000 PLAY
+4. click `Submit Sudo`
+5. click `Sign and Submit` in the new modal
+6. repeat steps 3-5 while selecting another wallet address at 3.2 if you want to top up other accounts (<mark style="color:purple;">**recommended to have at least 3 accounts keeping GAME tokens for later scenarios: eg. account1, account2, account3**</mark>)
+7. ![](<../.gitbook/assets/image (3) (1).png>)
+
+
+
+Get GAME token:
+
+1. click Developer --> Sudo
+2. under "submit the following change" select `currencies`
+3. in the right dropdown select `updateBalance(who, currencyId, amount)`
+   1. field `who`: keep `Id` selected
+   2. field `Id`: select your personal wallet address which should receive GAME tokens
+   3. field `currencyId`: enter `2` for GAME token
+   4. field `amount`:  enter `10000000000000` to receive 1000 GAME
 4. click `Submit Sudo`
 5. click `Sign and Submit` in the new modal
 6. repeat steps 3-5 while selecting another wallet address at 3.2 if you want to top up other accounts (<mark style="color:purple;">**recommended to have at least 3 accounts keeping PLAY tokens for later scenarios: eg. account1, account2, account3**</mark>)
@@ -79,7 +79,8 @@ Get PLAY (stablecoin) token:
 
 ### 3. Create Organisation
 
-Either go through the frontend process on haiku.gamedao.co and click the "+" button on the left navigation after connecting your wallet or follow this process:
+Either go through the frontend process on haiku.gamedao.co and click the "+" button on the left navigation after connecting your wallet or follow this step by step process:\
+
 
 1. click Developer --> Extrinsics
 2. ![](<../.gitbook/assets/image (1) (1).png>)&#x20;
@@ -94,11 +95,11 @@ Either go through the frontend process on haiku.gamedao.co and click the "+" but
    4. `orgType`: select any (eg. Individual)
    5. `access`: Open&#x20;
    6. `feeModel`: `NoFees` (or select `Transfer` if your Organisation wants to collect entry fees)
-   7. `fee`: enter eg. `1000000000000000000` if you selected `Transfer` or `Reserve` in point 5 or leave 0 if `NoFees` was selected
-   8. `govAsset`: `1` --> which represents GAME token
-   9. `payAsset`: `2` --> which represents PLAY token
+   7. `fee`: enter eg. `10000000000` if you selected `Transfer` or `Reserve` in point 5 or leave 0 if `NoFees` was selected
+   8. `govAsset`: `2` --> which represents GAME token
+   9. `payAsset`: `1` --> which represents PLAY token
    10. `memberLimit`: add eg. `100` for a limit of 100 members
-   11. `deposit`: add `10000000000000000000` for a deposit of 10 GAME (minimum deposit is currently 5 GAME)
+   11. `deposit`: add `100000000000` for a deposit of 10 GAME (minimum deposit is currently 5 GAME)
    12. click `Submit Transaction`
    13. click `Sign and Submit`
 8. Check that your Organisation is created by clicking to Developer --> Chain State --> select `control` pallet and `orgsControlled(AccoundId32)` and submit the query by clicking the "+" button. Make sure the account is selected which you set as controller at 7.1. \
@@ -123,6 +124,8 @@ You can join an Organisation like this:&#x20;
 
 This is how you create a fundraising campaign:&#x20;
 
+
+
 1. use the account (<mark style="color:purple;">**account1**</mark>) which was used to create the organisation under `using the selected account`
 2. click Developer --> Extrinsics
 3. select `flow` pallet and `createCampaign(...)` in the right dropdown
@@ -130,8 +133,8 @@ This is how you create a fundraising campaign:&#x20;
    1. `orgId`: enter the `orgId` from the Organisation you created and which you copied before&#x20;
    2. `adminId`: select the account which owns the Organisation&#x20;
    3. `name`: add a nice name ("My Campaign")
-   4. `target`: `10000000000000000000` (for 10 PLAY)
-   5. `deposit`: `1000000000000000000` (for 1 GAME)
+   4. `target`: `100000000000` (for 10 PLAY)
+   5. `deposit`: `10000000000` (for 1 GAME)
    6. `expiry`: enter a block number which is in the future (look at the current block number on the top left of polkadot.js.org and add 600 blocks for 30 minutes or 1200 for 1h if you need more time for testing). \
       🚧  At this expiry block number the campaign will expire. When it is not fully funded the users who funded the campaign will receive their token back. If it was funded in before this block number was processed the campaign was successful.  &#x20;
    7. `protocol`: `Raise` (fundraising protocol)
@@ -157,7 +160,7 @@ Contribute into a campaign by:
 3. use another account (<mark style="color:purple;">**account3**</mark>) and not the one which you used to create the campaign. Preferably use an account which is not even member of the organisation. was used to create the organisation under `using the selected account`
 4. Fill all the fields
    1. `campaignId`: add the copied `campaignId`
-   2. `contribution`: `11000000000000000000` 11 PLAY to overachieve the target of 10 PLAY&#x20;
+   2. `contribution`: `110000000000` 11 PLAY to overachieve the target of 10 PLAY&#x20;
 5. ![](<../.gitbook/assets/image (6).png>)
 6. click `Submit Transaction`
 7. click `Sign and Submit`
@@ -176,7 +179,7 @@ After the campaign expired and was funded create a withdrawal proposal to let th
    2. `campaignId`: the `campaignId` which was funded
    3. `title`: give your proposal a name like "withdraw funds"
    4. cid: `Qmeaj2DCJw71qwUZN8N2r4GVcBBGfqiyMMBrh15n2KbY7G` (content ID for proposal content)
-   5. `amount`: `10000000000000000000`
+   5. `amount`: `100000000000`
    6. `start:` add `block number (`choose a block number in the near future)
    7. `expiry:`add `block number (`choose a block number in the future which allows you to have enough time to vote on the proposal ( eg. 300 blocks more than the starting block number for 15 minutes of voting time)
    8. ![](<../.gitbook/assets/image (4).png>)

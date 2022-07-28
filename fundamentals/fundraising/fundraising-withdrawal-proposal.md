@@ -17,6 +17,10 @@ Congratulations! Your fundraising campaign was successful. Now it is time to ask
 11. Click Publish Proposal and sign and submit your transaction
 12. The voting is immediately active. Eligible voters are Organisation members and campaign contributors.
 
-{% hint style="info" %}
-If the majority of eligible voters voted YES the funds will be transferred to the Organisation Treasury Account. When majority is reached the voting is over.&#x20;
-{% endhint %}
+
+
+
+
+    {% hint style="info" %}
+    If the majority of eligible voters voted YES the funds will be transferred to the Organisation Treasury Account. When majority is reached the voting is over.&#x20;
+    {% endhint %}
