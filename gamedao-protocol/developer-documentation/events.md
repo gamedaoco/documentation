@@ -17,126 +17,109 @@ ___
 
 
 ## control
- 
-### OrgCreated(sender_id: `AccountId`, org_id: `Hash`, treasury_id: `AccountId`, created_at: `BlockNumber`, realm_index: `u64`)
+
+### OrgCreated(org_id: `Hash`, creator: `AccountId`, treasury_id: `AccountId`, created_at: `BlockNumber`, realm_index: `u64`)
 - **interface**: `api.events.control.OrgCreated.is`
-- **summary**:    Org was successfully created.
-
-### AddMember(org_id: `Hash`, account_id: `AccountId`, added_at: `BlockNumber`)
-- **interface**: `api.events.control.AddMember.is`
-- **summary**:    A member has been added to the Org.
-
-### RemoveMember(org_id: `Hash`, account_id: `AccountId`, removed_at: `BlockNumber`)
-- **interface**: `api.events.control.RemoveMember.is`
-- **summary**:    A member has been removed from the Org.
-
-### IsAMember(org_id: `Hash`, account_id: `AccountId`)
-- **interface**: `api.events.control.IsAMember.is`
-- **summary**:    Account is a member of the Org.
-
-### OrgUpdated(`AccountId`, `Hash`, `BlockNumber`)
-- **interface**: `api.events.control.OrgUpdated.is`
-- **summary**:    Org was successfully updated.
+- **summary**:   Org was successfully created.
 
 ### OrgEnabled(`Hash`)
 - **interface**: `api.events.control.OrgEnabled.is`
-- **summary**:    Org was enabled and it's state become Active.
+- **summary**:   Org was enabled and it's state become Active.
 
 ### OrgDisabled(`Hash`)
 - **interface**: `api.events.control.OrgDisabled.is`
-- **summary**:    Org was disabled and it's state become Inactive.
+- **summary**:   Org was disabled and it's state become Inactive.
 
-### ControllerUpdated(`Hash`, `AccountId`)
-- **interface**: `api.events.control.ControllerUpdated.is`
-- **summary**:    Controller's state has been changed.
+### MemberAdded(org_id: `Hash`, who: `AccountId`, block_number: `BlockNumber`)
+- **interface**: `api.events.control.MemberAdded.is`
+- **summary**:   A member has been added to the Org.
+
+### MemberRemoved(org_id: `Hash`, who: `AccountId`, block_number: `BlockNumber`)
+- **interface**: `api.events.control.MemberRemoved.is`
+- **summary**:   A member has been removed from the Org.
+
+### OrgUpdated(org_id: `Hash`, prime_id: `Option<AccountId>`, org_type: `Option<OrgType>`, access_model: `Option<AccessModel>`, member_limit: `Option<MemberLimit>`, fee_model: `Option<FeeModel>`, membership_fee: `Option<Balance>`, block_number: `BlockNumber`)
+- **interface**: `api.events.control.OrgUpdated.is`
+- **summary**:
+
+### FundsSpended(org_id: `Hash`, beneficiary: `AccountId`, amount: `Balance`, currency_id: `CurrencyId`, block_number: `BlockNumber`)
+- **interface**: `api.events.control.FundsSpended.is`
+- **summary**:
 
 ___
 
 
 ## flow
 
-### CampaignDestroyed(campaign_id: `Hash`)
-- **interface**: `api.events.flow.CampaignDestroyed.is`
-- **summary**:    Campaign was destroyed.
+### Created(campaign_id: `Hash`, creator: `AccountId`, admin: `AccountId`, target: `Balance`, deposit: `Balance`, expiry: `BlockNumber`, name: `BoundedVec<u8, StringLimit>`)
+- **interface**: `api.events.flow.Created.is`
+- **summary**:   Campaign was successfully created.
 
-### CampaignCreated(campaign_id: `Hash`, creator: `AccountId`, admin: `AccountId`, target: `Balance`, deposit: `Balance`, expiry: `BlockNumber`, name: `Vec<u8>`)
-- **interface**: `api.events.flow.CampaignCreated.is`
-- **summary**:    Campaign was successfully created.
+### Activated(campaign_id: `Hash`)
+- **interface**: `api.events.flow.Activated.is`
+- **summary**:
 
-### CampaignContributed(campaign_id: `Hash`, sender: `AccountId`, contribution: `Balance`, block_number: `BlockNumber`)
-- **interface**: `api.events.flow.CampaignContributed.is`
-- **summary**:    Campaign was contributed.
+### Contributed(campaign_id: `Hash`, sender: `AccountId`, contribution: `Balance`, block_number: `BlockNumber`)
+- **interface**: `api.events.flow.Contributed.is`
+- **summary**:   Campaign was contributed.
 
-### CampaignFinalized(campaign_id: `Hash`, campaign_balance: `Balance`, block_number: `BlockNumber`, success: `bool`)
-- **interface**: `api.events.flow.CampaignFinalized.is`
-- **summary**:    Campaign was finalized.
+### Succeeded(campaign_id: `Hash`, campaign_balance: `Balance`, block_number: `BlockNumber`)
+- **interface**: `api.events.flow.Succeeded.is`
+- **summary**:   Campaign was finalized.
 
-### CampaignFailed(campaign_id: `Hash`, campaign_balance: `Balance`, block_number: `BlockNumber`, success: `bool`)
-- **interface**: `api.events.flow.CampaignFailed.is`
-- **summary**:    Campaign failed - successfully reverted.
-
-### CampaignReverting(campaign_id: `Hash`, campaign_balance: `Balance`, block_number: `BlockNumber`)
-- **interface**: `api.events.flow.CampaignReverting.is`
-- **summary**:    Campaign is in the middle of reverting process.
-
-### CampaignFinalising(campaign_id: `Hash`, campaign_balance: `Balance`, block_number: `BlockNumber`)
-- **interface**: `api.events.flow.CampaignFinalising.is`
-- **summary**:    Campaign is in the middle of finalization process.
-
-### CampaignUpdated(campaign_id: `Hash`, state: `FlowState`, block_number: `BlockNumber`)
-- **interface**: `api.events.flow.CampaignUpdated.is`
-- **summary**:    Campaign was updated with a new state.
+### Failed(campaign_id: `Hash`, campaign_balance: `Balance`, block_number: `BlockNumber`)
+- **interface**: `api.events.flow.Failed.is`
+- **summary**:   Campaign failed - successfully reverted.
 
 ___
 
 
 ## sense
 
-### EntityInit(`AccountId`, `BlockNumber`)
-- **interface**: `api.events.control.EntityInit.is`
-- **summary**:    New Sense Entity was created.
+### EntityCreated(account_id: `AccountId`, block_number: `BlockNumber`)
+- **interface**: `api.events.sense.EntityCreated.is`
+- **summary**:   New Sense Entity was created.
 
-### EntityMutateXP(`AccountId`, `BlockNumber`)
-- **interface**: `api.events.control.EntityMutateXP.is`
-- **summary**:    Experience property was updated.
-
-### EntityMutateREP(`AccountId`, `BlockNumber`)
-- **interface**: `api.events.control.EntityMutateREP.is`
-- **summary**:    Reputation property was updated.
-
-### EntityMutateTrust(`AccountId`, `BlockNumber`)
-- **interface**: `api.events.control.EntityMutateTrust.is`
-- **summary**:    Trust property was updated.
+### PropertyUpdated(property_type: `PropertyType`, account_id: `AccountId`, block_number: `BlockNumber`)
+- **interface**: `api.events.sense.PropertyUpdated.is`
+- **summary**:   Property was updated.
 
 ___
 
 
 ## signal
- 
-### Proposal(sender_id: `AccountId`, proposal_id: `Hash`)
-- **interface**: `api.events.signal.Proposal.is`
-- **summary**:    Proposal was successfully created (ex. General proposal).
 
-### ProposalCreated(sender_id: `AccountId`, org_id: `Hash`, campaign_id: `Option<Hash>`, proposal_id: `Hash`, amount: `Balance`, expiry: `BlockNumber`)
-- **interface**: `api.events.signal.ProposalCreated.is`
-- **summary**:    Proposal was successfully created (ex. Withdrawal proposal).
+### Voted(account: `AccountId`, proposal_id: `Hash`, voted: `bool`, yes: `VotingPower`, no: `VotingPower`, vote_power: `VotingPower`)
+- **interface**: `api.events.signal.Voted.is`
+- **summary**:
 
-### ProposalVoted(sender_id: `AccountId`, proposal_id: `Hash`, vote: `bool`)
-- **interface**: `api.events.signal.ProposalVoted.is`
-- **summary**:     Proposal was voted.
+### Created(account: `AccountId`, proposal_id: `Hash`, org_id: `Hash`, campaign_id: `Option<Hash>`, amount: `Option<Balance>`, start: `BlockNumber`, expiry: `BlockNumber`)
+- **interface**: `api.events.signal.Created.is`
+- **summary**:
 
-### ProposalApproved(proposal_id: `Hash`)
-- **interface**: `api.events.signal.ProposalApproved.is`
-- **summary**:     Proposal was approved after the voting.
+### Activated(proposal_id: `Hash`)
+- **interface**: `api.events.signal.Activated.is`
+- **summary**:
 
-### ProposalRejected(proposal_id: `Hash`)
-- **interface**: `api.events.signal.ProposalRejected.is`
-- **summary**:     Proposal was rejected after the voting.
+### Accepted(proposal_id: `Hash`)
+- **interface**: `api.events.signal.Accepted.is`
+- **summary**:
 
-### ProposalExpired(proposal_id: `Hash`)
-- **interface**: `api.events.signal.ProposalExpired.is`
-- **summary**:     Proposal was expired, not finalized before expiry block number.
+### Rejected(proposal_id: `Hash`)
+- **interface**: `api.events.signal.Rejected.is`
+- **summary**:
 
-### WithdrawalGranted(proposal_id: `Hash`, campaign_id: `Hash`, org_id: `Hash`)
-- **interface**: `api.events.signal.WithdrawalGranted.is`
-- **summary**:     Balance was unlocked for the Withdrawal proposal.
+### Expired(proposal_id: `Hash`)
+- **interface**: `api.events.signal.Expired.is`
+- **summary**:
+
+### Aborted(proposal_id: `Hash`)
+- **interface**: `api.events.signal.Aborted.is`
+- **summary**:
+
+### Finalized(proposal_id: `Hash`)
+- **interface**: `api.events.signal.Finalized.is`
+- **summary**:
+
+___
+

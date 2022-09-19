@@ -2,7 +2,7 @@
 title: Extrinsics
 ---
 
-The following sections contain Extrinsics methods are part of the default runtime. On the api, these are exposed via `api.tx.<module>.<method>`. 
+The following sections contain Extrinsics methods are part of the default runtime. On the api, these are exposed via `api.tx.<module>.<method>`.
 
 - **[control](#control)**
 
@@ -18,240 +18,170 @@ ___
 
 ## control
 
-### create_org(controller_id: `AccountId`, name: `Vec<u8>`, cid: `Vec<u8>`, org_type: `OrgType`, access: `AccessModel`, fee_model: `FeeModel`, fee: `Balance`, gov_asset: `CurrencyId`, pay_asset: `CurrencyId`, member_limit: `u64`, deposit: `Option<Balance>`)
+### create_org(name: `String`, cid: `String`, org_type: `OrgType`, access_model: `AccessModel`, fee_model: `FeeModel`, member_limit: `Option<MemberLimit>`, membership_fee: `Option<Balance>`, gov_currency: `Option<CurrencyId>`, pay_currency: `Option<CurrencyId>`, deposit: `Option<Balance>`)
 - **interface**: `api.tx.control.create_org`
-- **summary**:    Create an on chain organisation. 
+- **summary**:   Create an on chain organization
 
-   - `origin`: Org creator.
-	- `controller_id`: Org controller.
-	- `name`: Org name.
-	- `cid`: IPFS content identifier.
-	- `org_type`: Individual | Company | Dao | Hybrid.
-	- `access`: Open (anyone can join) | Voting (membership voting) | Controller (controller invites).
-	- `fee_model`: NoFees | Reserve (amount reserved in user account) | 
-   Transfer (amount transfered to Org treasury).
-	- `fee`: fees amount to be applied to new members based on fee model (in Protocol tokens).
-	- `gov_asset`: control assets to empower actors.
-	- `pay_asset`: asset used for payments.
-   - `member_limit`: max members, if 0 == no limit.
-	- `deposit`: initial deposit for the org treasury (in Protocol tokens).
+	- `name`:  org name.
+	- `cid`:  ipfs content identifier.
+	- `org_type`:  individual | company | dao | hybrid.
+	- `access_model`: 
+	- `fee_model`: 
+	- `member_limit`:  max members. default: maxmembers.
+	- `membership_fee`: 
+	- `gov_currency`: 
+	- `pay_currency`: 
+	- `deposit`:  initial deposit for the org treasury (in protocol tokens).
 
-   Emits `OrgCreated` event when successful.
+	Emits `OrgCreated` event when successful.
 
-   Weight: `O(1)`
+	Weight: `O(1)`
+
+### update_org(org_id: `Hash`, prime_id: `Option<AccountId>`, org_type: `Option<OrgType>`, access_model: `Option<AccessModel>`, member_limit: `Option<MemberLimit>`, fee_model: `Option<FeeModel>`, membership_fee: `Option<Balance>`)
+- **interface**: `api.tx.control.update_org`
+- **summary**:   Update Org
+
+	Allowed origins: Root or prime if OrgType::Individual
+
+	- `org_id`:  org hash.
+	- `prime_id`:  new prime id.
+	- `org_type`: 
+	- `access_model`:  new access model.
+	- `member_limit`:  new member limit.
+	- `fee_model`:  new fee model.
+	- `membership_fee`:  new membership fee.
+
+	Emits `OrgUpdated` event when successful.
+
+	Weight: `O(1)`
 
 ### enable_org(org_id: `Hash`)
 - **interface**: `api.tx.control.enable_org`
-- **summary**:    Enable Org. 
+- **summary**:   Enable Org
 
-   Enables an Org to be used and changes it's state to Active.
-   Root origin only.
+	Enables an Org to be used and changes it's state to Active.
+	Allowed origins: Root or prime if OrgType::Individual
 
-   - `org_id`: Org id (hash). 
+	- `org_id`:  org hash.
 
-   Emits `OrgEnabled` event when successful.
+	Emits `OrgEnabled` event when successful.
 
-   Weight: `O(1)`
+	Weight: `O(1)`
 
 ### disable_org(org_id: `Hash`)
 - **interface**: `api.tx.control.disable_org`
-- **summary**:    Disable Org. 
+- **summary**:   Disable Org
 
-   Disables an Org to be used and changes it's state to Inactive.
-   Root origin only.
+	Disables an Org to be used and changes it's state to Inactive.
+	Allowed origins: Root or prime if OrgType::Individual
 
-   - `org_id`: Org id (hash). 
+	- `org_id`:  org hash.
 
-   Emits `OrgDisabled` event when successful.
+	Emits `OrgDisabled` event when successful.
 
-   Weight: `O(1)`
+	Weight: `O(1)`
 
-### add_member(org_id: `Hash`, account_id: `AccountId`)
+### add_member(org_id: `Hash`, who: `AccountId`)
 - **interface**: `api.tx.control.add_member`
-- **summary**:    Add Member to Org.
+- **summary**:   Add Member to Org
 
-   - `org_id`: Org id (hash).
-   - `account_id`: Account to be added. 
+	Allowed origins: Root or prime if OrgType::Individual
 
-   Emits `AddMember` event when successful.
+	- `org_id`:  org id.
+	- `who`:  account to be added.
 
-   Weight: `O(log n)`
+	Emits `MemberAdded` event when successful.
 
-### remove_member(org_id: `Hash`, account_id: `AccountId`)
+	Weight: `O(log n)`
+
+### remove_member(org_id: `Hash`, who: `AccountId`)
 - **interface**: `api.tx.control.remove_member`
-- **summary**:    Remove Member to Org.
+- **summary**:   Remove member from Org
 
-   - `org_id`: Org id (hash).
-   - `account_id`: Account to be removed. 
+	Allowed origins: Root or prime if OrgType::Individual
 
-   Emits `RemoveMember` event when successful.
+	- `org_id`:  org id.
+	- `who`:  account to be removed.
 
-   Weight: `O(log n)`
+	Emits `MemberRemoved` event when successful.
 
-### check_membership(org_id: `Hash`)
-- **interface**: `api.tx.control.check_membership`
-- **summary**:   Checks membership.
+	Weight: `O(log n)`
 
-   Checks if origin is a member of the Org.
+### spend_funds(org_id: `Hash`, currency_id: `CurrencyId`, beneficiary: `AccountId`, amount: `Balance`)
+- **interface**: `api.tx.control.spend_funds`
+- **summary**:   Make spending from the org treasury
 
-   - `origin`: Account to be checked.
-   - `org_id`: Org id (hash).
+	Allowed origins: Root or prime if OrgType::Individual
 
-   Emits `IsAMember` event when successful.
+	- `org_id`:  org id.
+	- `currency_id`:  currency to be spent.
+	- `beneficiary`:  receiver account.
+	- `amount`:  amount to be spent.
 
-   Weight: `O(1)`
+	Emits `FundsSpended` event when successful.
+
+	Weight: `O(1)`
 
 ___
 
 
 ## flow
 
-### create_campaign(org_id: `Hash`, admin_id: `AccountId`, name: `Vec<u8>`, target: `Balance`, deposit: `Balance`, expiry: `BlockNumber`, protocol: `FlowProtocol`, governance: `FlowGovernance`, cid: `Vec<u8>`, token_symbol: `Vec<u8>`, token_name: `Vec<u8>`)
-- **interface**: `api.tx.control.create_campaign`
-- **summary**:   Create campaign.
-
-	- `org_id`: Organisation id.
-	- `admin_id`: Campaign admin. Supervision, should be dao provided!
-	- `name`: Campaign name
-	- `target`: Target balance for the campaign.
-	- `deposit`: Initial deposit of the campaign creator.
-	- `expiry`: Campaign expiry block number.
-	- `protocol`:
-	- `governance`:
-	- `cid`: IPFS content identifier.
-	- `token_symbol`:
-	- `token_name`:
-
-   Emits `CampaignCreated` event when successful.
-
-   Weight: `O(1)`
-
-### update_state(campaign_id: `Hash`, state: `FlowState`)
-- **interface**: `api.tx.control.update_state`
-- **summary**:   Update campaign state.
-
-	- `campaign_id`: Campaign id.
-	- `state`: Init | Active | Paused | ... | Finalized.
-
-   Emits `CampaignUpdated` event when successful.
-
-   Weight: `O(1)`
+### create_campaign(org_id: `Hash`, admin_id: `AccountId`, name: `BoundedVec<u8, StringLimit>`, target: `Balance`, deposit: `Balance`, expiry: `BlockNumber`, protocol: `FlowProtocol`, governance: `FlowGovernance`, cid: `BoundedVec<u8, StringLimit>`, start: `Option<BlockNumber>`, token_symbol: `Option<BoundedVec<u8, StringLimit>>`, token_name: `Option<BoundedVec<u8, StringLimit>>`)
+- **interface**: `api.tx.flow.create_campaign`
+- **summary**:
 
 ### contribute(campaign_id: `Hash`, contribution: `Balance`)
-- **interface**: `api.tx.control.contribute`
-- **summary**:   Contribute to project.
+- **interface**: `api.tx.flow.contribute`
+- **summary**:   Contribute to project
 
-	- `campaign_id`: Campaign id.
-	- `contribution`: Contribution amount.
+	- `campaign_id`: 
+	- `contribution`: 
 
-   Emits `CampaignContributed` event when successful.
+	Emits `CampaignContributed` event when successful.
 
-   Weight: `O(1)`
+	Weight: O(1)
 
 ___
 
 
 ## sense
 
-### create_entity(account_id: `AccountId`, cid: `Vec<u8>`)
-- **interface**: `api.tx.control.create_entity`
+### create_entity(account_id: `AccountId`, cid: `BoundedVec<u8, StringLimit>`)
+- **interface**: `api.tx.sense.create_entity`
 - **summary**:   Create a Sense Entity for the account.
 
-	- `account_id`: Account id.
-	- `cid`: IPFS content identifier.
+	- `account_id`:  account id.
+	- `cid`:  ipfs content identifier.
 
-   Emits `EntityInit` event when successful.
+	Emits `EntityCreated` event when successful.
 
-   Weight: `O(1)`
+	Weight: `O(1)`
 
-### mod_xp(account_id: `AccountId`, value: `Vec<u8>`)
-- **interface**: `api.tx.control.mod_xp`
-- **summary**:   Modifies an Experience property of the account.
+### update_property(account_id: `AccountId`, property_type: `PropertyType`, value: `u8`)
+- **interface**: `api.tx.sense.update_property`
+- **summary**:   Modifies a property of the account.
 
-	- `account_id`: Account id.
-	- `value`:  increment Experience by this value.
+	- `account_id`:  account id.
+	- `property_type`:  property type (experience, reputation, trust).
+	- `value`:  value to be incremented to property.
 
-   Emits `EntityMutateXP` event when successful.
+	Emits `PropertyUpdated` event when successful.
 
-   Weight: `O(1)`
-
-### mod_rep(account_id: `AccountId`, value: `Vec<u8>`)
-- **interface**: `api.tx.control.mod_rep`
-- **summary**:   Modifies a Reputation property of the account.
-
-	- `account_id`: Account id.
-	- `value`:  increment Reputation by this value.
-
-   Emits `EntityMutateREP` event when successful.
-
-   Weight: `O(1)`
-
-### mod_trust(account_id: `AccountId`, value: `Vec<u8>`)
-- **interface**: `api.tx.control.mod_trust`
-- **summary**:   Modifies a Trust property of the account.
-
-	- `account_id`: Account id.
-	- `value`:  increment Trust by this value.
-
-   Emits `EntityMutateTrust` event when successful.
-
-   Weight: `O(1)`
+	Weight: `O(1)`
 
 ___
 
 
 ## signal
 
-### general_proposal(org_id: `Hash`, title: `Vec<u8>`, cid: `Vec<u8>`, start: `BlockNumber`, expiry: `BlockNumber`)
-- **interface**: `api.tx.signal.general_proposal`
-- **summary**:   Create a general proposal.
+### proposal(proposal_type: `ProposalType`, org_id: `Hash`, title: `BoundedVec<u8, StringLimit>`, cid: `BoundedVec<u8, StringLimit>`, expiry: `BlockNumber`, majority: `Majority`, unit: `Unit`, scale: `Scale`, start: `Option<BlockNumber>`, quorum: `Option<Permill>`, deposit: `Option<Balance>`, campaign_id: `Option<Hash>`, amount: `Option<Balance>`, beneficiary: `Option<AccountId>`, currency_id: `Option<CurrencyId>`)
+- **interface**: `api.tx.signal.proposal`
+- **summary**:
 
-	- `org_id`: Organisation id.
-	- `title`: Proposal's title.
-	- `cid`: IPFS content identifier.
-	- `start`: Block when the proposal starts.
-	- `expiry`: Block when the proposal finishes.
+### vote(proposal_id: `Hash`, approve: `bool`, deposit: `Option<Balance>`)
+- **interface**: `api.tx.signal.vote`
+- **summary**:
 
-   Emits `Proposal` event when successful.
+___
 
-   Weight: `O(1)`
-
-### membership_proposal(org_id: `Hash`, member: `AccountId`, action: `u8`, start: `BlockNumber`, expiry: `BlockNumber`)
-- **interface**: `api.tx.signal.membership_proposal`
-- **summary**:   Create a membership proposal.
-
-	- `org_id`: Organisation id.
-	- `member`: Proposal's title.
-	- `action`: Action to take.
-	- `start`: Block when the proposal starts.
-	- `expiry`: Block when the proposal finishes.
-
-   Emits `Proposal` event when successful.
-
-   Weight: `O(1)`
-
-### withdraw_proposal(campaign_id: `Hash`, title: `Vec<u8>`, cid: `Vec<u8>`, amount: `Balance`, start: `BlockNumber`, expiry: `BlockNumber`)
-- **interface**: `api.tx.signal.withdraw_proposal`
-- **summary**:   Create a withdrawal proposal.
-
-	- `campaign_id`: Campaign id.
-	- `title`: Proposal's title.
-	- `cid`: IPFS content identifier.
-	- `amount`: Balance to be withdrawn.
-	- `start`: Block when the proposal starts.
-	- `expiry`: Block when the proposal finishes.
-
-   Emits `ProposalCreated` event when successful.
-
-   Weight: `O(1)`
-
-### simple_vote(proposal_id: `Hash`, vote: `bool`)
-- **interface**: `api.tx.signal.simple_vote`
-- **summary**:   Create a simple voting
-
-	- `proposal_id`: Proposal id.
-	- `vote`: yes / no.
-
-   Emits `ProposalVoted` event when successful.
-
-   Weight:

@@ -18,37 +18,29 @@ ___
 
 ## control
 
-### palletId: `FrameSupportPalletId`
-- **interface**: `api.consts.control.palletId`
-- **summary**:    The control's pallet id, used for deriving organization treasuries IDs.
+### palletId: `PalletId`
+- **interface**: `api.consts.control.PalletId`
+- **summary**:   The control's pallet id, used for deriving organization treasuries IDs.
 
-### game3FoundationTreasury: `AccountId`
-- **interface**: `api.consts.control.game3FoundationTreasury`
-- **summary**:    The Game3 Foundation Treasury AccountId.
-
-### gameDAOTreasury: `AccountId`
-- **interface**: `api.consts.control.gameDAOTreasury`
-- **summary**:    The GameDAO Treasury AccountId.
-
-### maxDAOsPerAccount: `u32`
-- **interface**: `api.consts.control.maxDAOsPerAccount`
-- **summary**:    The max number of DAOs created per one account.
-
-### maxMembersPerDAO: `u32`
-- **interface**: `api.consts.control.maxMembersPerDAO`
-- **summary**:    The max number of members per one DAO.
+### maxMembers: `u32`
+- **interface**: `api.consts.control.MaxMembers`
+- **summary**:   The max number of members per one org.
 
 ### protocolTokenId: `CurrencyId`
-- **interface**: `api.consts.control.protocolTokenId`
-- **summary**:    The CurrencyId which is used as a protokol token.
+- **interface**: `api.consts.control.ProtocolTokenId`
+- **summary**:   The CurrencyId which is used as a protokol token.
 
 ### paymentTokenId: `CurrencyId`
-- **interface**: `api.consts.control.paymentTokenId`
-- **summary**:    The CurrencyId which is used as a payment token.
+- **interface**: `api.consts.control.PaymentTokenId`
+- **summary**:   The CurrencyId which is used as a payment token.
 
-### minimumDeposit: `u32`
-- **interface**: `api.consts.control.minimumDeposit`
-- **summary**:    The min amount of the deposit which is locked during Org creation (in Protocol tokens).
+### minimumDeposit: `Balance`
+- **interface**: `api.consts.control.MinimumDeposit`
+- **summary**:   The min amount of the deposit which is locked during Org creation (in Protocol tokens).
+
+### stringLimit: `u32`
+- **interface**: `api.consts.control.StringLimit`
+- **summary**:   The maximum length of a name or cid stored on-chain.
 
 ___
 
@@ -56,73 +48,106 @@ ___
 ## flow
 
 ### gameDAOTreasury: `AccountId`
-- **interface**: `api.consts.flow.gameDAOTreasury`
-- **summary**:    The GameDAO Treasury AccountId.
+- **interface**: `api.consts.flow.GameDAOTreasury`
+- **summary**:   The GameDAO Treasury AccountId.
 
 ### minNameLength: `u32`
-- **interface**: `api.consts.flow.minNameLength`
-- **summary**:    The min length of a campaign name.
-
-### maxNameLength: `u32`
-- **interface**: `api.consts.flow.maxNameLength`
-- **summary**:    The max length of a campaign name.
+- **interface**: `api.consts.flow.MinNameLength`
+- **summary**:   The min length of a campaign name.
 
 ### maxCampaignsPerBlock: `u32`
-- **interface**: `api.consts.flow.maxCampaignsPerBlock`
-- **summary**:    The max number of campaigns per one block.
+- **interface**: `api.consts.flow.MaxCampaignsPerBlock`
+- **summary**:   The max number of campaigns per one block.
 
-### maxContributionsPerBlock: `u32`
-- **interface**: `api.consts.flow.maxContributionsPerBlock`
-- **summary**:    The max number of contributions per one block.
+### maxCampaignContributors: `u32`
+- **interface**: `api.consts.flow.MaxCampaignContributors`
+- **summary**:   The max number of contributors per one Campaign.
 
 ### maxContributorsProcessing: `u32`
-- **interface**: `api.consts.flow.maxContributorsProcessing`
-- **summary**:    The max number of contributors for processing in one block (batch size) during Campaign finalization.
+- **interface**: `api.consts.flow.MaxContributorsProcessing`
+- **summary**:   The max number of contributors for processing in one block (batch size) during Campaign finalization.
 
-### minCampaignDuration: `BlockNumber`
-- **interface**: `api.consts.flow.minCampaignDuration`
-- **summary**:    The min number of blocks for campaign duration.
+### minContribution: `Balance`
+- **interface**: `api.consts.flow.MinContribution`
+- **summary**:   The min contribution amount in payment tokens.
 
-### maxCampaignDuration: `BlockNumber`
-- **interface**: `api.consts.flow.maxCampaignDuration`
-- **summary**:    The max number of blocks for campaign duration.
+### minCampaignDeposit: `Permill`
+- **interface**: `api.consts.flow.MinCampaignDeposit`
+- **summary**:   The min campaign deposit - fraction of a target, default 10%.
 
 ### protocolTokenId: `CurrencyId`
-- **interface**: `api.consts.flow.protocolTokenId`
-- **summary**:    The CurrencyId which is used as a protokol token.
+- **interface**: `api.consts.flow.ProtocolTokenId`
+- **summary**:   The CurrencyId which is used as a protokol token.
 
 ### paymentTokenId: `CurrencyId`
-- **interface**: `api.consts.flow.paymentTokenId`
-- **summary**:    The CurrencyId which is used as a payment token.
+- **interface**: `api.consts.flow.PaymentTokenId`
+- **summary**:   The CurrencyId which is used as a payment token.
 
-### сampaignFee: `u32`
-- **interface**: `api.consts.flow.сampaignFee`
-- **summary**:    The amount of comission to be paid from the Org treasury to GameDAO treasury after successfull Campaign finalization.
+### campaignFee: `Permill`
+- **interface**: `api.consts.flow.CampaignFee`
+- **summary**:   The amount of commission to be paid from the Org treasury to GameDAO treasury after successful Campaign finalization.
+
+### stringLimit: `u32`
+- **interface**: `api.consts.flow.StringLimit`
+- **summary**:   The maximum length of a name or symbol stored on-chain.
+
+### campaignDurationLimits: `(Self::BlockNumber, Self::BlockNumber)`
+- **interface**: `api.consts.flow.CampaignDurationLimits`
+- **summary**:   Default time limit for a campaign in blocks.
 
 ___
 
 
 ## sense
 
-No constants
+### stringLimit: `u32`
+- **interface**: `api.consts.sense.StringLimit`
+- **summary**:   The maximum length of a name or symbol stored on-chain.
 
 ___
 
 
 ## signal
 
-### MaxProposalsPerBlock: `u32`
-- **interface**: `api.consts.signal.MaxProposalsPerBlock`
-- **summary**:    The max number of proposals per one block.
-
-### MaxProposalDuration: `u32`
-- **interface**: `api.consts.signal.MaxProposalDuration`
-- **summary**:   The maximum time limit for a proposal in blocks.
+### paymentTokenId: `CurrencyId`
+- **interface**: `api.consts.signal.PaymentTokenId`
+- **summary**:   The CurrencyId which is used as a payment token.
 
 ### protocolTokenId: `CurrencyId`
-- **interface**: `api.consts.signal.protocolTokenId`
-- **summary**:    The CurrencyId which is used as a protokol token.
+- **interface**: `api.consts.signal.ProtocolTokenId`
+- **summary**:   The CurrencyId which is used as a protokol token.
 
-### paymentTokenId: `CurrencyId`
-- **interface**: `api.consts.signal.paymentTokenId`
-- **summary**:    The CurrencyId which is used as a payment token.
+### minProposalDeposit: `Balance`
+- **interface**: `api.consts.signal.MinProposalDeposit`
+- **summary**:   Min deposit for Proposal creation.
+
+### proposalDurationLimits: `(Self::BlockNumber, Self::BlockNumber)`
+- **interface**: `api.consts.signal.ProposalDurationLimits`
+- **summary**:   Default time limit for a proposal in blocks.
+
+### gameDAOTreasury: `AccountId`
+- **interface**: `api.consts.signal.GameDAOTreasury`
+- **summary**:   The GameDAO Treasury AccountId.
+
+### maxMembers: `u32`
+- **interface**: `api.consts.signal.MaxMembers`
+- **summary**:   Max number of members per organization.
+
+### maxProposalsPerBlock: `u32`
+- **interface**: `api.consts.signal.MaxProposalsPerBlock`
+- **summary**:   The max number of proposals per one block.
+
+### stringLimit: `u32`
+- **interface**: `api.consts.signal.StringLimit`
+- **summary**:   The maximum length of a string, stored on chain.
+
+### slashingMajority: `Permill`
+- **interface**: `api.consts.signal.SlashingMajority`
+- **summary**:   Majority of rejection >= {this value} * eligible voters --> slash deposit (default: 2/3).
+
+### gameDAOGetsFromSlashing: `Permill`
+- **interface**: `api.consts.signal.GameDAOGetsFromSlashing`
+- **summary**:   This part of slashing goes to GameDAO treasury (default: 1/4).
+
+___
+
