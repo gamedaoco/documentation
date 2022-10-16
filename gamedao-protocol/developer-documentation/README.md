@@ -1,8 +1,7 @@
 ---
 description: >-
-  This is a developer documentation. It contains information about GameDAO protocol pallets: control, flow, sense, signal.
-cover: ../../.gitbook/assets/IP39-Overrun.jpg
-coverY: 0
+  This is GameDAO's developer documentation. It contains technical information
+  about the GameDAO protocol and its pallets: Control, Flow, Sense and Signal.
 ---
 
 # 📖 Developer Documentation

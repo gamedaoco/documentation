@@ -1,233 +1,271 @@
----
-title: Errors
----
+# Errors
+
+
 
 This page lists the errors that can be encountered in the different modules.
 
-- **[control](#control)**
+* [**control**](errors.md#control)
+* [**flow**](errors.md#flow)
+* [**sense**](errors.md#sense)
+* [**signal**](errors.md#signal)
 
-- **[flow](#flow)**
+***
 
-- **[sense](#sense)**
+### control
 
-- **[signal](#signal)**
+#### AuthorizationError
 
+* **interface**: `api.errors.control.AuthorizationError.is`
+* **summary**:
 
-___
+#### OrganizationExists
 
+* **interface**: `api.errors.control.OrganizationExists.is`
+* **summary**: Org Exists.
 
-## control
+#### OrganizationUnknown
 
-### AuthorizationError
-- **interface**: `api.errors.control.AuthorizationError.is`
-- **summary**:
+* **interface**: `api.errors.control.OrganizationUnknown.is`
+* **summary**: Org Unknown.
 
-### OrganizationExists
-- **interface**: `api.errors.control.OrganizationExists.is`
-- **summary**:   Org Exists.
+#### BalanceLow
 
-### OrganizationUnknown
-- **interface**: `api.errors.control.OrganizationUnknown.is`
-- **summary**:   Org Unknown.
+* **interface**: `api.errors.control.BalanceLow.is`
+* **summary**: Insufficient Balance to create Org.
 
-### BalanceLow
-- **interface**: `api.errors.control.BalanceLow.is`
-- **summary**:   Insufficient Balance to create Org.
+#### MembershipLimitReached
 
-### MembershipLimitReached
-- **interface**: `api.errors.control.MembershipLimitReached.is`
-- **summary**:   Membership Limit Reached.
+* **interface**: `api.errors.control.MembershipLimitReached.is`
+* **summary**: Membership Limit Reached.
 
-### AlreadyMember
-- **interface**: `api.errors.control.AlreadyMember.is`
-- **summary**:   Member Exists.
+#### AlreadyMember
 
-### NotMember
-- **interface**: `api.errors.control.NotMember.is`
-- **summary**:   Member Unknown.
+* **interface**: `api.errors.control.AlreadyMember.is`
+* **summary**: Member Exists.
 
-### NoChangesProvided
-- **interface**: `api.errors.control.NoChangesProvided.is`
-- **summary**:
+#### NotMember
 
-### TreasuryExists
-- **interface**: `api.errors.control.TreasuryExists.is`
-- **summary**:   Treasury account already exists.
+* **interface**: `api.errors.control.NotMember.is`
+* **summary**: Member Unknown.
 
-### TreasuryUnknown
-- **interface**: `api.errors.control.TreasuryUnknown.is`
-- **summary**:   Treasury account does not exists.
+#### NoChangesProvided
 
-### MinimumDepositTooLow
-- **interface**: `api.errors.control.MinimumDepositTooLow.is`
-- **summary**:   Minimum deposit to Treasury too low.
+* **interface**: `api.errors.control.NoChangesProvided.is`
+* **summary**:
 
-### MissingParameter
-- **interface**: `api.errors.control.MissingParameter.is`
-- **summary**:
+#### TreasuryExists
 
-### WrongOrganizationType
-- **interface**: `api.errors.control.WrongOrganizationType.is`
-- **summary**:
+* **interface**: `api.errors.control.TreasuryExists.is`
+* **summary**: Treasury account already exists.
 
-___
+#### TreasuryUnknown
 
+* **interface**: `api.errors.control.TreasuryUnknown.is`
+* **summary**: Treasury account does not exists.
 
-## flow
+#### MinimumDepositTooLow
 
-### AuthorizationError
-- **interface**: `api.errors.flow.AuthorizationError.is`
-- **summary**:
+* **interface**: `api.errors.control.MinimumDepositTooLow.is`
+* **summary**: Minimum deposit to Treasury too low.
 
-### BalanceLow
-- **interface**: `api.errors.flow.BalanceLow.is`
-- **summary**:
+#### MissingParameter
 
-### CampaignExpired
-- **interface**: `api.errors.flow.CampaignExpired.is`
-- **summary**:
+* **interface**: `api.errors.control.MissingParameter.is`
+* **summary**:
 
-### CampaignsPerBlockExceeded
-- **interface**: `api.errors.flow.CampaignsPerBlockExceeded.is`
-- **summary**:
+#### WrongOrganizationType
 
-### CampaignUnknown
-- **interface**: `api.errors.flow.CampaignUnknown.is`
-- **summary**:
+* **interface**: `api.errors.control.WrongOrganizationType.is`
+* **summary**:
 
-### ContributionInsufficient
-- **interface**: `api.errors.flow.ContributionInsufficient.is`
-- **summary**:
+***
 
-### DepositInsufficient
-- **interface**: `api.errors.flow.DepositInsufficient.is`
-- **summary**:
+### flow
 
-### DepositTooHigh
-- **interface**: `api.errors.flow.DepositTooHigh.is`
-- **summary**:   Deposit exceeds the campaign target.
+#### AuthorizationError
 
-### NameTooShort
-- **interface**: `api.errors.flow.NameTooShort.is`
-- **summary**:
+* **interface**: `api.errors.flow.AuthorizationError.is`
+* **summary**:
 
-### NoContributionsAllowed
-- **interface**: `api.errors.flow.NoContributionsAllowed.is`
-- **summary**:
+#### BalanceLow
 
-### NoContributionToOwnCampaign
-- **interface**: `api.errors.flow.NoContributionToOwnCampaign.is`
-- **summary**:
+* **interface**: `api.errors.flow.BalanceLow.is`
+* **summary**:
 
-### OrgPrimeUnknown
-- **interface**: `api.errors.flow.OrgPrimeUnknown.is`
-- **summary**:
+#### CampaignExpired
 
-### OutOfBounds
-- **interface**: `api.errors.flow.OutOfBounds.is`
-- **summary**:   Campaign starts/expires validation failed.
+* **interface**: `api.errors.flow.CampaignExpired.is`
+* **summary**:
 
-### TreasuryBalanceLow
-- **interface**: `api.errors.flow.TreasuryBalanceLow.is`
-- **summary**:
+#### CampaignsPerBlockExceeded
 
-### TreasuryNotExist
-- **interface**: `api.errors.flow.TreasuryNotExist.is`
-- **summary**:
+* **interface**: `api.errors.flow.CampaignsPerBlockExceeded.is`
+* **summary**:
 
-___
+#### CampaignUnknown
 
+* **interface**: `api.errors.flow.CampaignUnknown.is`
+* **summary**:
 
-## sense
+#### ContributionInsufficient
 
-### EntityExists
-- **interface**: `api.errors.sense.EntityExists.is`
-- **summary**:   Entity exists.
+* **interface**: `api.errors.flow.ContributionInsufficient.is`
+* **summary**:
 
-### EntityUnknown
-- **interface**: `api.errors.sense.EntityUnknown.is`
-- **summary**:   Entity unknown.
+#### DepositInsufficient
 
-### InvalidParam
-- **interface**: `api.errors.sense.InvalidParam.is`
-- **summary**:   Invalid param.
+* **interface**: `api.errors.flow.DepositInsufficient.is`
+* **summary**:
 
-### EntityPropertyOverflow
-- **interface**: `api.errors.sense.EntityPropertyOverflow.is`
-- **summary**:   Overflow adding a value to the entity property.
+#### DepositTooHigh
 
-### EntityCountOverflow
-- **interface**: `api.errors.sense.EntityCountOverflow.is`
-- **summary**:   Overflow adding a value to the entity count.
+* **interface**: `api.errors.flow.DepositTooHigh.is`
+* **summary**: Deposit exceeds the campaign target.
 
-___
+#### NameTooShort
 
+* **interface**: `api.errors.flow.NameTooShort.is`
+* **summary**:
 
-## signal
+#### NoContributionsAllowed
 
-### AuthorizationError
-- **interface**: `api.errors.signal.AuthorizationError.is`
-- **summary**:
+* **interface**: `api.errors.flow.NoContributionsAllowed.is`
+* **summary**:
 
-### BalanceLow
-- **interface**: `api.errors.signal.BalanceLow.is`
-- **summary**:
+#### NoContributionToOwnCampaign
 
-### CampaignUnsucceeded
-- **interface**: `api.errors.signal.CampaignUnsucceeded.is`
-- **summary**:
+* **interface**: `api.errors.flow.NoContributionToOwnCampaign.is`
+* **summary**:
 
-### DepositInsufficient
-- **interface**: `api.errors.signal.DepositInsufficient.is`
-- **summary**:
+#### OrgPrimeUnknown
 
-### DuplicateVote
-- **interface**: `api.errors.signal.DuplicateVote.is`
-- **summary**:
+* **interface**: `api.errors.flow.OrgPrimeUnknown.is`
+* **summary**:
 
-### MissingParameter
-- **interface**: `api.errors.signal.MissingParameter.is`
-- **summary**:
+#### OutOfBounds
 
-### OrgInactive
-- **interface**: `api.errors.signal.OrgInactive.is`
-- **summary**:
+* **interface**: `api.errors.flow.OutOfBounds.is`
+* **summary**: Campaign starts/expires validation failed.
 
-### OutOfBounds
-- **interface**: `api.errors.signal.OutOfBounds.is`
-- **summary**:
+#### TreasuryBalanceLow
 
-### ProposalExists
-- **interface**: `api.errors.signal.ProposalExists.is`
-- **summary**:
+* **interface**: `api.errors.flow.TreasuryBalanceLow.is`
+* **summary**:
 
-### ProposalNotActive
-- **interface**: `api.errors.signal.ProposalNotActive.is`
-- **summary**:
+#### TreasuryNotExist
 
-### ProposalUnknown
-- **interface**: `api.errors.signal.ProposalUnknown.is`
-- **summary**:
+* **interface**: `api.errors.flow.TreasuryNotExist.is`
+* **summary**:
 
-### TooManyProposals
-- **interface**: `api.errors.signal.TooManyProposals.is`
-- **summary**:
+***
 
-### TreasuryBalanceLow
-- **interface**: `api.errors.signal.TreasuryBalanceLow.is`
-- **summary**:
+### sense
 
-### TreasuryUnknown
-- **interface**: `api.errors.signal.TreasuryUnknown.is`
-- **summary**:
+#### EntityExists
 
-### VoteLimitReached
-- **interface**: `api.errors.signal.VoteLimitReached.is`
-- **summary**:
+* **interface**: `api.errors.sense.EntityExists.is`
+* **summary**: Entity exists.
 
-### WrongParameter
-- **interface**: `api.errors.signal.WrongParameter.is`
-- **summary**:
+#### EntityUnknown
 
-___
+* **interface**: `api.errors.sense.EntityUnknown.is`
+* **summary**: Entity unknown.
 
+#### InvalidParam
+
+* **interface**: `api.errors.sense.InvalidParam.is`
+* **summary**: Invalid param.
+
+#### EntityPropertyOverflow
+
+* **interface**: `api.errors.sense.EntityPropertyOverflow.is`
+* **summary**: Overflow adding a value to the entity property.
+
+#### EntityCountOverflow
+
+* **interface**: `api.errors.sense.EntityCountOverflow.is`
+* **summary**: Overflow adding a value to the entity count.
+
+***
+
+### signal
+
+#### AuthorizationError
+
+* **interface**: `api.errors.signal.AuthorizationError.is`
+* **summary**:
+
+#### BalanceLow
+
+* **interface**: `api.errors.signal.BalanceLow.is`
+* **summary**:
+
+#### CampaignUnsucceeded
+
+* **interface**: `api.errors.signal.CampaignUnsucceeded.is`
+* **summary**:
+
+#### DepositInsufficient
+
+* **interface**: `api.errors.signal.DepositInsufficient.is`
+* **summary**:
+
+#### DuplicateVote
+
+* **interface**: `api.errors.signal.DuplicateVote.is`
+* **summary**:
+
+#### MissingParameter
+
+* **interface**: `api.errors.signal.MissingParameter.is`
+* **summary**:
+
+#### OrgInactive
+
+* **interface**: `api.errors.signal.OrgInactive.is`
+* **summary**:
+
+#### OutOfBounds
+
+* **interface**: `api.errors.signal.OutOfBounds.is`
+* **summary**:
+
+#### ProposalExists
+
+* **interface**: `api.errors.signal.ProposalExists.is`
+* **summary**:
+
+#### ProposalNotActive
+
+* **interface**: `api.errors.signal.ProposalNotActive.is`
+* **summary**:
+
+#### ProposalUnknown
+
+* **interface**: `api.errors.signal.ProposalUnknown.is`
+* **summary**:
+
+#### TooManyProposals
+
+* **interface**: `api.errors.signal.TooManyProposals.is`
+* **summary**:
+
+#### TreasuryBalanceLow
+
+* **interface**: `api.errors.signal.TreasuryBalanceLow.is`
+* **summary**:
+
+#### TreasuryUnknown
+
+* **interface**: `api.errors.signal.TreasuryUnknown.is`
+* **summary**:
+
+#### VoteLimitReached
+
+* **interface**: `api.errors.signal.VoteLimitReached.is`
+* **summary**:
+
+#### WrongParameter
+
+* **interface**: `api.errors.signal.WrongParameter.is`
+* **summary**:

@@ -1,34 +1,59 @@
 ---
-description: GameDAO = Video Games + Community + DAO + DeFi + NFT
-cover: .gitbook/assets/IP39-DeepMarket.jpg
+description: >-
+  Welcome to the official documentation for GameDAO, the go-to platform for game
+  enthusiasts to connect, crowdfund & co-ordinate your most important gaming
+  projects.
+cover: .gitbook/assets/Gitbook-header-vf1.png
 coverY: 0
 ---
 
-# 🕹 GameDAO
+# 🕹 Introduction
 
 {% hint style="success" %}
-**Keep it real:** The contents of these pages, published under docs.gamedao.co are a collection of the latest developments of our protocols and not considered final. We live an open and transparent culture and therefore publicly share works in progress and knowledge, traditional minds would build another million dollar silo with.&#x20;
+**Keep it real:** The contents of these pages, published under docs.gamedao.co are a collection of the latest developments of our protocols and not considered final. We live an open and transparent culture and therefore publicly share works in progress and knowledge.
 {% endhint %}
 
-GameDAO Protocol is an experimental decentralised protocol for fundraising, coordination and ownership of video games. It is developed by GameDAO AG, a research and development company, based in Liechtenstein, with contributors around the world.
+### What is GameDAO?
 
-GameDAO is built with [substrate](https://substrate.io), a cutting edge blockchain SDK by Parity, with interoperability, scalability, robustness and security in mind. It is built and deployed on [zero.io](https://zero.io), a video games multichain, and partner networks in the Polkadot ecosystem, like [acala.network](https://acala.network).
+GameDAO is a multifaceted coordination platform built on ZERO Network using substrate.io. ZERO network (zero.io) is a video game multichain network which is part of the Polkadot ecosystem. The GameDAO platform is a place where gamers, creators, investors and esports teams can come together to form collaborative clans (DAOs) to work together to achieve common goals using democratic and transparent technology.
 
-### **Primitives for open markets**
+GameDAO has been set up as an intermediate stock company, GameDAO AG, which is based in Liechtenstein. We recently completed the setup of Game3 Foundation, a charity organisation with aims to support, develop and transform video games into the Web3 era.
 
-GameDAO Protocol provides primitives for invocation and operation of decentralised organisations (DAOs), utilisation of decentralised finance (DeFi) instruments for fundraising and non-fungible token (NFT) to provide a comprehensive solution for license management and projects related loot drops. The protocol is designed and operated in a decentralised fashion, enabling programmatic access to everyone.
+In the near future, 100% of GameDAO AG will be contributed to the charity, effectively giving control of the AG to the community over time through progressive decentralisation. Eventually, this means that GameDAO will be wholly governed and controlled by nominated and elected $GAME token holders, instead of a more centralised team.&#x20;
 
-GameDAO AG also develops the decentralised application frontend accessible through https://app.gamedao.co, and others, to enable non technical entities to utilise these protocols with some additional safeguards, making them usable in a reasonable, secure and compliant way.
+### What's it For?
 
-![](.gitbook/assets/headerimg.png)
+Whether you want to fund an awesome new game while getting milestone updates, join a lifestyle guild and vote on merchandise changes, or find like-minded esports enthusiasts to compete for cash—GameDAO gives you the tools to create and coordinate.
 
-### **Community owned by design**
+GameDAO is also the platform where the community can collaboratively own and govern games funded and created on the platform: You can vote on changes, development updates and more—all as a democratic community, using **DAO**s.
 
-The protocols and application assemble to a low barrier, community governed fundraising platform to involve funding contributors in project coordination to increase mutual trust due to shared interests and increased transparency. This allows for early stage market proof and loyalty through ownership.
+The team behind GameDAO is currently made up of tech gaming enthusiasts, with backgrounds in everything from traditional business, to esports, to design and game development.
 
-This shall contribute to the individual freedom of the community and the creation of more sustainable business models of video games and the cyberspace in general.
+### **Vision and Mission**
 
-### GameDAO: the protocol directly connecting gamers, creators, publishers and investors.
+GameDAO’s vision is to become the go-to hub for game enthusiasts to ideate, create and build games and organisations collaboratively and sustainably. We want to both inspire and reward game creators, players, publishers, and investors together on a safe and secure social platform.
+
+Our mission is to reconfigure the gaming industry into a participation and ownership-based industry where all key contributors can participate, collaborate and coordinate. No more developers that don’t listen to the community. No more opaque communication channels and awkward forums. One transparent, low-barrier platform for the community, by the community.
+
+<figure><img src=".gitbook/assets/gamedao.png" alt=""><figcaption></figcaption></figure>
+
+### **Community**
+
+The community is the energy that powers GameDAO. The platform itself will be community-governed, allowing individuals to create clans and organisations to achieve goals together in a decentralised way.&#x20;
+
+Coordinate your goals together as part of a group; share a decentralised treasury, or even enable early market proof of a game you’re building by getting direct feedback from the testers all on one platform.
+
+If you’d like to see some specific use cases in action, visit the Use Cases section for some examples of organisations built using GameDAO.
+
+{% content-ref url="fundamentals/use-cases/" %}
+[use-cases](fundamentals/use-cases/)
+{% endcontent-ref %}
+
+> GameDAO: the protocol directly connecting gamers, creators, publishers and investors.
+
+### Roadmap
+
+<figure><img src=".gitbook/assets/roadmap.png" alt=""><figcaption><p>Currently a WIP, this is our up-to-date roadmap for 2022-2023 Q2</p></figcaption></figure>
 
 
 
@@ -44,46 +69,34 @@ early prototype
 review in the wild
 {% endembed %}
 
-### Guides
+### Use Cases
 
-Follow our guides to get started:
+Check out our Use Cases to see GameDAO's features in action
 
-{% content-ref url="guides/from-dao-to-campaign.md" %}
-[from-dao-to-campaign.md](guides/from-dao-to-campaign.md)
+{% content-ref url="fundamentals/use-cases/gamers.md" %}
+[gamers.md](fundamentals/use-cases/gamers.md)
 {% endcontent-ref %}
 
-{% content-ref url="guides/discover-curate-contribute-the-lifecycle-of-a-campaign.md" %}
-[discover-curate-contribute-the-lifecycle-of-a-campaign.md](guides/discover-curate-contribute-the-lifecycle-of-a-campaign.md)
+{% content-ref url="fundamentals/use-cases/investors.md" %}
+[investors.md](fundamentals/use-cases/investors.md)
 {% endcontent-ref %}
-
-{% content-ref url="guides/realms.md" %}
-[realms.md](guides/realms.md)
-{% endcontent-ref %}
-
-{% hint style="info" %}
-**Good to know:** your product docs aren't just a reference of all your features! use them to encourage folks to perform certain actions and discover the value in your product.
-{% endhint %}
 
 ### Fundamentals: Dive a little deeper
 
 Learn the fundamentals of MyProduct to get a deeper understanding of our main features:
 
-{% content-ref url="fundamentals/gamedao-the-dao-of-daos.md" %}
-[gamedao-the-dao-of-daos.md](fundamentals/gamedao-the-dao-of-daos.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
-{% content-ref url="fundamentals/coordination.md" %}
-[coordination.md](fundamentals/coordination.md)
+{% content-ref url="fundamentals/id.md" %}
+[id.md](fundamentals/id.md)
 {% endcontent-ref %}
 
 {% content-ref url="fundamentals/fundraising.md" %}
 [fundraising.md](fundamentals/fundraising.md)
 {% endcontent-ref %}
 
-{% content-ref url="fundamentals/ownership.md" %}
-[ownership.md](fundamentals/ownership.md)
+{% content-ref url="fundamentals/gov.md" %}
+[gov.md](fundamentals/gov.md)
 {% endcontent-ref %}
-
-{% hint style="info" %}
-**Good to know:** Splitting your product into fundamental concepts, objects, or areas can be a great way to let readers deep dive into the concepts that matter most to them. Combine guides with this approach to 'fundamentals' and you're well on your way to great documentation!
-{% endhint %}

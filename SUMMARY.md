@@ -1,32 +1,31 @@
 # Table of contents
 
-* [🕹 GameDAO](README.md)
-* [📖 Code of Conduct](code-of-conduct.md)
+## GameDAO
 
-## Guides
-
-* [💌 Install Polkadot wallet and create an Account](guides/installing-your-wallet.md)
-* [🪄 From DAO to Campaign](guides/from-dao-to-campaign.md)
-* [💡 Discover, Curate, Contribute: The lifecycle of a Campaign](guides/discover-curate-contribute-the-lifecycle-of-a-campaign.md)
-* [🍒 Realms](guides/realms.md)
-* [💰 Fundraising Withdrawal Proposal](fundamentals/fundraising/fundraising-withdrawal-proposal.md)
-* [🧑🎓 🧑🎓 Beeblebrox Testing](guides/beeblebrox-testing.md)
+* [🕹 Introduction](README.md)
 
 ## Fundamentals
 
-* [🎮 GameDAO: The DAO of DAOs](fundamentals/gamedao-the-dao-of-daos.md)
-* [🏛 Governance](fundamentals/coordination.md)
-* [🍕 Ownership](fundamentals/ownership.md)
-* [💸 Fundraising](fundamentals/fundraising.md)
-* [💎 Rewards](fundamentals/rewards.md)
+* [❓ Identity](fundamentals/id.md)
+* [🏛 Governance & Tokenomics](fundamentals/gov.md)
+* [📩 Voting & Coordination](fundamentals/fundraising.md)
+* [⚙ Use Cases](fundamentals/use-cases/README.md)
+  * [🎮 Guilds & Gamers](fundamentals/use-cases/gamers.md)
+  * [🎨 Creators & Devs](fundamentals/use-cases/creators.md)
+  * [💡 Investors & Publishers](fundamentals/use-cases/investors.md)
 
-## Use Cases
+## Getting Started
 
-* [Gamers](use-cases/gamers.md)
-* [Contributors + Investors](use-cases/contributors-+-investors.md)
-* [Game Studios + Creators](use-cases/game-studios-+-creators.md)
-* [Publishers](use-cases/publishers.md)
-* [Engineers + Integrators](use-cases/engineers-+-integrators.md)
+* [🖥 Get Connected](getting-started/acc-creation.md)
+* [🎮 From DAO to Campaign](getting-started/creating-dao.md)
+* [💱 Withdrawal Proposals](getting-started/withdrawals.md)
+* [🌐 Realms](getting-started/realms.md)
+
+## Partnerships
+
+* [🌊 WAVE Esports](partnerships/wave-esports.md)
+* [✨ SPARX Esports](partnerships/sparx-esports.md)
+* [👾 XP Fantasy](partnerships/xp-fantasy.md)
 
 ## GameDAO Protocol
 
@@ -37,12 +36,8 @@
   * [Errors](gamedao-protocol/developer-documentation/errors.md)
   * [Constants](gamedao-protocol/developer-documentation/constants.md)
 * [📖 Technical Overview](gamedao-protocol/technical-overview.md)
-* [🚀 Unstoppable Organisations](gamedao-protocol/unstoppable-organisations.md)
-* [⚖ Proposals + Voting](gamedao-protocol/proposals-+-voting.md)
-* [💸 Fundraising](gamedao-protocol/fundraising/README.md)
-  * [Grants](gamedao-protocol/fundraising/grants.md)
-  * [Fundraising](gamedao-protocol/fundraising/fundraising.md)
-  * [Lending](gamedao-protocol/fundraising/lending.md)
-  * [Fractionalised Shares](gamedao-protocol/fundraising/fractionalised-shares.md)
-* [🧚 Identity + Scoring](gamedao-protocol/identity-+-scoring.md)
-* [🖼 Rewards + Collectables](gamedao-protocol/portable-collectables.md)
+
+***
+
+* [Get Involved](get-involved/README.md)
+  * [📖 Code of Conduct](get-involved/code-of-conduct.md)
