@@ -3,7 +3,7 @@ description: >-
   Welcome to the official documentation for GameDAO, the go-to platform for game
   enthusiasts to connect, crowdfund & co-ordinate your most important gaming
   projects.
-cover: .gitbook/assets/Gitbook-header-vf1.png
+cover: .gitbook/assets/gitbook-header-1-2.png
 coverY: 0
 ---
 
