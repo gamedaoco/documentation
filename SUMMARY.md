@@ -2,17 +2,14 @@
 
 ## GameDAO
 
-* [🕹 Introduction](README.md)
+* [🕹 What is GameDAO?](README.md)
 
-## Fundamentals
+## Applications
 
-* [❓ Identity](fundamentals/id.md)
-* [🏛 Governance & Tokenomics](fundamentals/gov.md)
-* [📩 Voting & Coordination](fundamentals/fundraising.md)
-* [⚙ Use Cases](fundamentals/use-cases/README.md)
-  * [🎮 Guilds & Gamers](fundamentals/use-cases/gamers.md)
-  * [🎨 Creators & Devs](fundamentals/use-cases/creators.md)
-  * [💡 Investors & Publishers](fundamentals/use-cases/investors.md)
+* [🎮 Battlepass](applications/readme.md)
+* [📈 Investor Syndicates](applications/investor-syndicates.md)
+* [🛍 The Storefront](applications/the-storefront.md)
+* [🕹 The WASD Gaming Accelerator](applications/the-wasd-gaming-accelerator.md)
 
 ## Getting Started
 
@@ -23,9 +20,10 @@
 
 ## Partnerships
 
+* [🪐 ÆX-1 Esports](partnerships/aex-1-esports.md)
 * [🌊 WAVE Esports](partnerships/wave-esports.md)
-* [✨ SPARX Esports](partnerships/sparx-esports.md)
 * [👾 XP Fantasy](partnerships/xp-fantasy.md)
+* [📇 Multifarm.fi](partnerships/multifarm.fi.md)
 
 ## GameDAO Protocol
 

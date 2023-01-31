@@ -1,21 +1,25 @@
 ---
 description: >-
   Welcome to the official documentation for GameDAO, the go-to platform for game
-  enthusiasts to connect, crowdfund & co-ordinate your most important gaming
+  enthusiasts to connect, crowdfund & co-ordinate their most important gaming
   projects.
 cover: .gitbook/assets/gitbook-header-1-2.png
 coverY: 0
 ---
 
-# 🕹 Introduction
+# 🕹 What is GameDAO?
 
 {% hint style="success" %}
 **Keep it real:** The contents of these pages, published under docs.gamedao.co are a collection of the latest developments of our protocols and not considered final. We live an open and transparent culture and therefore publicly share works in progress and knowledge.
 {% endhint %}
 
-### What is GameDAO?
+### Introduction
 
-GameDAO is a multifaceted coordination platform built on ZERO Network using substrate.io. ZERO network (zero.io) is a video game multichain network which is part of the Polkadot ecosystem. The GameDAO platform is a place where gamers, creators, investors and esports teams can come together to form collaborative clans (DAOs) to work together to achieve common goals using democratic and transparent technology.
+GameDAO is a multifaceted coordination platform built on [ZERO Network](https://parachains.info/details/zero) using substrate.io. [ZERO network](https://app.gitbook.com/u/HeKxHypN2kaHbZt2W8VUNnuI3lF2) is a video game multichain network which is part of the Polkadot & Dotsama ecosystem.&#x20;
+
+The GameDAO platform is a place where gamers, creators, investors and esports teams can come together to form collaborative clans (DAOs) to work together to achieve common goals using democratic and transparent technology.&#x20;
+
+Our current aim is the development of a web3-powered fan engagement platform, specifically designed with esports organisations and content creators in mind. This is called the [Battlepass](https://app.gitbook.com/o/gdB0avh011RMXwN2wUzt/s/XlD4fZHAtSiDUCi0qHER/\~/changes/QlIsgHwJXCfCUUnSrdCV/applications/readme).
 
 GameDAO has been set up as an intermediate stock company, GameDAO AG, which is based in Liechtenstein. We recently completed the setup of Game3 Foundation, a charity organisation with aims to support, develop and transform video games into the Web3 era.
 
@@ -45,10 +49,6 @@ Coordinate your goals together as part of a group; share a decentralised treasur
 
 If you’d like to see some specific use cases in action, visit the Use Cases section for some examples of organisations built using GameDAO.
 
-{% content-ref url="fundamentals/use-cases/" %}
-[use-cases](fundamentals/use-cases/)
-{% endcontent-ref %}
-
 > GameDAO: the protocol directly connecting gamers, creators, publishers and investors.
 
 ### Roadmap
@@ -68,35 +68,3 @@ early prototype
 {% embed url="https://www.youtube.com/watch?v=Rw4HTxYJq-Q" %}
 review in the wild
 {% endembed %}
-
-### Use Cases
-
-Check out our Use Cases to see GameDAO's features in action
-
-{% content-ref url="fundamentals/use-cases/gamers.md" %}
-[gamers.md](fundamentals/use-cases/gamers.md)
-{% endcontent-ref %}
-
-{% content-ref url="fundamentals/use-cases/investors.md" %}
-[investors.md](fundamentals/use-cases/investors.md)
-{% endcontent-ref %}
-
-### Fundamentals: Dive a little deeper
-
-Learn the fundamentals of MyProduct to get a deeper understanding of our main features:
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
-
-{% content-ref url="fundamentals/id.md" %}
-[id.md](fundamentals/id.md)
-{% endcontent-ref %}
-
-{% content-ref url="fundamentals/fundraising.md" %}
-[fundraising.md](fundamentals/fundraising.md)
-{% endcontent-ref %}
-
-{% content-ref url="fundamentals/gov.md" %}
-[gov.md](fundamentals/gov.md)
-{% endcontent-ref %}

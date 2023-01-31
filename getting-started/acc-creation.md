@@ -111,7 +111,7 @@ To get all of the above token, you may use the faucet integrated into our discor
 
 1. Join our Discord channel to obtain some ZERO tokens: [https://discord.gg/P7NHWGzJ7r](https://discord.gg/P7NHWGzJ7r)
 2. Go to press start channel in ENTER GAMEDAO category: \
-   ![](../.gitbook/assets/image.png)
+   ![](<../.gitbook/assets/image (2).png>)
 3. Click the moneybag icon :moneybag:to get the Web3 Weirdo role so that you can use the faucet:![](<../.gitbook/assets/image (5).png>)
 4. Find the faucet channel in the category ZERO NETWORK:\
    ![](<../.gitbook/assets/image (3) (1) (1).png>)\

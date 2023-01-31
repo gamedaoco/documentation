@@ -12,7 +12,7 @@ First, you'll need to create a DAO to get organised with your collaborators and 
 
 ## 1. Create a Wallet and Claim an Identity
 
-Set up your polkadot.js wallet and obtain some ZERO token from the faucet bot in our Discord Channel as described in [previous chapter](../fundamentals/use-cases/creators.md) and set an on-chain identity like this:
+Set up your polkadot.js wallet and obtain some ZERO token from the faucet bot in our Discord Channel as described in [previous chapter](broken-reference) and set an on-chain identity like this:
 
 1. go to [https://polkadot.js.org/apps/#/accounts](https://polkadot.js.org/apps/#/accounts) and select an account from below and find the three dots on the right:\
    ![](<../.gitbook/assets/image (5) (1) (1).png>)
@@ -39,7 +39,7 @@ Now its time to create your first DAO.
 8. add a website and a code repository if you have some related to your Organisation
 9. **IMPORTANT**: The Controller Account address needs to be a wallet address in ZERO format. The holder of the Controller Account address is the admin of the DAO. You can use your current address (eg. copy by clicking the heart icon next to your wallet on the top right) and paste it into the form
 10. **IMPORTANT**: The Treasury Account address also needs to be a wallet address in ZERO format. The Treasury Account address is the address receiving funds from fundraising campaigns and fees. This address may not be the same address as the Controller Account address. Therefore you will need a second address to setup your Organisation. \
-    If you do not have a second address you can create one in your polkadot.js browser plugin repeating the steps in[ Install Polkadot wallet and create an Account](../fundamentals/use-cases/creators.md).  Add your second address into the Treasury Account address field\
+    If you do not have a second address you can create one in your polkadot.js browser plugin repeating the steps in[ Install Polkadot wallet and create an Account](broken-reference).  Add your second address into the Treasury Account address field\
 
 
     {% hint style="warning" %}
