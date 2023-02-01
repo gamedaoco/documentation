@@ -3,6 +3,10 @@
 ## GameDAO
 
 * [🕹 What is GameDAO?](README.md)
+* [⚙ Use Cases](gamedao/use-cases/README.md)
+  * [🕹 Guilds & Gamers](gamedao/use-cases/guilds-and-gamers.md)
+  * [⌨ Creators & Devs](gamedao/use-cases/creators-and-devs.md)
+  * [💡 Investors & Publishers](gamedao/use-cases/investors-and-publishers.md)
 
 ## Applications
 
